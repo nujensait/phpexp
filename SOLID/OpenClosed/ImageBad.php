@@ -8,6 +8,13 @@
  * @author Mishaikon <mishaikon@mail.ru>
  */
 
+/**
+ * php ImageBad.php
+Save as BMP to file image.bmp
+Save as JPG to file image.jpg
+Save as PNG to file image.png
+ */
+
 class Image
 {
     private int $width;
@@ -36,7 +43,7 @@ class Image
      */
     public function GetSize() : ImageSize
     {
-        return new ImageSize($width, $height);
+        return new ImageSize($this->width, $this->height);
     }
 
     /**

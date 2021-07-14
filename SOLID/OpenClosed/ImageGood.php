@@ -8,6 +8,16 @@
  * @author Mishaikon <mishaikon@mail.ru>
  */
 
+/**
+ * php ImageGood.php
+< save to image_1626248365.bmp >
+< save to image_1626248365.jpg >
+< save to image_1626248365.png >
+ */
+
+/**
+ * Interface ISave
+ */
 interface ISave
 {
     public function Save(string $path, Image $image);
