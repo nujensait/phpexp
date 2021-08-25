@@ -1,8 +1,6 @@
 <?php
 
-$n = $i = $_GET['count'] ?? 4;
-echo '<pre>';
-while ($i--) {
-    echo str_repeat(' ', $i).str_repeat('* ', $n - $i)."\n";
-}
-echo '</pre>';
+// @see https://badcode.ru/docker-tutorial-dlia-novichkov-rassmatrivaiem-docker-tak-iesli-by-on-byl-ighrovoi-pristavkoi/
+// @hint un on rhel7
+
+echo 'Hello from apache. We have PHP version = ' . phpversion() . PHP_EOL;
