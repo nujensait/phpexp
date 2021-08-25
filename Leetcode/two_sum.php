@@ -16,6 +16,9 @@
  * Input: nums = [3,2,4], target = 6
  * Output: [1,2]
  *
+ * Result: OK, Accepted
+ * Runtime: 1052 ms, faster than 46.54% of PHP online submissions for Two Sum.
+ * Memory Usage: 16.2 MB, less than 86.87% of PHP online submissions for Two Sum.
  */
 
 class Solution
