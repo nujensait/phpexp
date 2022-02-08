@@ -17,7 +17,8 @@ X=$1
 Y=$2
 
 # check that numbers are passed
-re='^[0-9]+$'
+#re='^[\.-0-9]+$'
+re='^-?[0-9]+[.,]?[0-9]*$'
 
 if ! [[ $X =~ $re ]] ; then
    echo "Error: Not a number: $X" >&2; exit 1
@@ -27,7 +28,4 @@ if ! [[ $Y =~ $re ]] ; then
    echo "Error: Not a number: $Y" >&2; exit 1
 fi
 
-declare -i SUM=0   
-SUM+=$X
-SUM+=$Y
-echo "Sum: $SUM"
+awk "BEGIN{ print $X + $Y }"
