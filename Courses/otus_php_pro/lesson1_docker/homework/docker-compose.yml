@@ -45,3 +45,13 @@ services:
         container_name: ${MEMCACHED_HOST}
         ports:
             - 11212:11211
+
+    redis:
+        image: redis:3.2
+        volumes:
+            - ./etc/redis/redis.conf:/usr/local/etc/redis/redis.conf:rw
+        mem_limit: 100m
+        ports:
+            - "6379:6379"
+        environment:
+            TZ : "Europe/Moscow"
