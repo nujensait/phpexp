@@ -1,6 +1,14 @@
-# Otus PHP Pro course  
-Lesson 1: docker container sample
+# What is it 
+Webserver based on Docker: running Nginx, PHP-FPM, MySQL, Memcached, Redis in containers
 
-# Docker for PHP Applications
-Docker running Nginx, PHP-FPM, MySQL, Memcached, Redis
+# Task source
+Otus PHP Pro course: https://fas.st/wRyRs  
+Lesson 1: Create Docker container sample
 
+# Author
+Mikhail Ikonnikov <mishaikon@gmail.com>
+
+# Source 
+Based on original sources:
+* https://github.com/ipanardian/docker-php-nginx-mysql-memcached
+* https://developpaper.com/docker-quickly-builds-and-evolves-a-php-nginx-mysql-redis-xdebug-memcached-development-environment/
