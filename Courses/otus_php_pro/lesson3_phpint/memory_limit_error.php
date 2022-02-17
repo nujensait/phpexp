@@ -6,8 +6,8 @@
   но из-за ограничения памяти падает на 1000 строчек
  (подсказка: использовать memory_limit для ограничения потребления памяти скриптом)
 - в качестве пимера: будем обрабатывать большой CSV-файл,
-  в котором нам нужно прочитаьть даные из одного столбца и записать их в новый файл
-  Решение будет неоптимальным в том, что считываемые даные мы будем намеренно сохранять в памяти (расходуя ее),
+  в котором нам нужно прочитать даные из одного столбца и записать их в новый файл
+- Решение будет неоптимальным в том, что считываемые даные мы будем намеренно сохранять в памяти (расходуя ее),
   а уже потом писаь в файл.
  */
 
@@ -35,7 +35,10 @@ class BadCsvImport
         foreach($lines as $line) {
             $row = explode($sep, $line);
             if(isset($row[$rownum])) {
-                $this->data[] = $row[$rownum];
+                $dataEnt = new DataEntity();
+                $dataEnt->phone = $row[$rownum];
+                $dataEnt->dust  = str_repeat("dust", 1000);
+                $this->data[]   = $dataEnt;
             }
         }
 
@@ -52,15 +55,16 @@ class BadCsvImport
         @unlink($filename);
         $cnt = count($this->data);
         if($cnt) {
+            /** @var DataEntity $cell */
+            $handle     = fopen($filename, "a");
             foreach($this->data as $cell) {
                 try {
-                    $handle     = fopen($filename, "a");
-                    fwrite($handle, $cell . "\n");
-                    fclose($handle);
+                    fwrite($handle, $cell->phone . "\n");
                 } catch(Exception $e) {
                     return 0;
                 }
             }
+            fclose($handle);
             return $cnt;
         }
 
@@ -68,9 +72,15 @@ class BadCsvImport
     }
 }
 
+class DataEntity {
+    public $data;
+    public $phone;
+    public $dust;
+}
+
 echo "[ Current memory limit: " . ini_get("memory_limit") . " ] \n";
 echo "[ Set new memory limit ... ]\n";
-ini_set("memory_limit", 1);
+ini_set("memory_limit", "1M");
 echo "[ New memory limit: " . ini_get("memory_limit") . " ] \n";
 
 echo "[ START IMPORT ... ]\n";

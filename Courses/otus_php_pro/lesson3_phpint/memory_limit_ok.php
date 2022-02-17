@@ -7,6 +7,9 @@
   (подсказка: использовать memory_limit для ограничения потребления памяти скриптом)
 - то есть нужно обрабатывать корректно данные произвольного объема
 - посмотреть, как происходит потребление и утечка памяти в скриптах
+- в качестве пимера: будем обрабатывать большой CSV-файл,
+  в котором нам нужно прочитать данные из одного столбца и записать их в новый файл;
+- для оптиммального использования памяти исходный файл будем читать построчно (вопспольуемся Итератором)
  */
 
 /**
@@ -22,7 +25,7 @@
 /**
  * Итератор CSV-файлов.
  */
-class CsvIterator implements \Iterator
+class CsvIterator implements Iterator
 {
     const ROW_SIZE = 4096;
 
@@ -56,15 +59,15 @@ class CsvIterator implements \Iterator
      * Конструктор пытается открыть CSV-файл. Он выдаёт исключение при ошибке.
      * @param string $file CSV-файл.
      * @param string $delimiter Разделитель.
-     * @throws \Exception
+     * @throws Exception
      */
     public function __construct($file, $delimiter = ',')
     {
         try {
             $this->filePointer = fopen($file, 'rb');
             $this->delimiter = $delimiter;
-        } catch (\Exception $e) {
-            throw new \Exception('The file "' . $file . '" cannot be read.');
+        } catch (Exception $e) {
+            throw new Exception('The file "' . $file . '" cannot be read.');
         }
     }
 
@@ -79,15 +82,15 @@ class CsvIterator implements \Iterator
 
     /**
      * Этот метод возвращает текущую CSV-строку в виде двумерного массива.
-     *
-     * @return array Текущая CSV-строка в виде двумерного массива.
+     * Возвращается текущая CSV-строка в виде двумерного массива.
+     * @return array
      */
-    public function current(): array
+    public function current() : array
     {
         $this->currentElement = fgetcsv($this->filePointer, self::ROW_SIZE, $this->delimiter);
         $this->rowCounter++;
-
-        return $this->currentElement;
+        //var_dump($this->currentElement); die();
+        return (is_array($this->currentElement) ? $this->currentElement : []);
     }
 
     /**
@@ -101,7 +104,6 @@ class CsvIterator implements \Iterator
 
     /**
      * Этот метод проверяет, достигнут ли конец файла.
-     *
      * @return bool Возвращает true при достижении EOF, в ином случае false.
      */
     public function next(): bool
@@ -141,17 +143,29 @@ class CsvImport {
      */
     public function saveData(string $fileFrom, string $fileTo, int $num) : int
     {
+        $cnt = 0;
+
         try {
-            $handle     = fopen($filename, "a");
-            $csv = new CsvIterator(__DIR__ . '/import.csv');
+            // delete prev result
+            @unlink($fileTo);
+            // file to read
+            $csv    = new CsvIterator($fileFrom, ";");
+            // file to write
+            $handle = fopen($fileTo, "a");
+            // iterate through csv lines
             foreach ($csv as $row) {
-                $cell = $row[$num];
-                fwrite($handle, $cell . "\n");
+                if(isset($row[$num])) {
+                    $cell = $row[$num];
+                    fwrite($handle, $cell . "\n");
+                    $cnt++;
+                }
             }
             fclose($handle);
         } catch(Exception $e) {
             return 0;
         }
+
+        return $cnt;
     }
 }
 
@@ -161,11 +175,12 @@ class CsvImport {
 
 echo "[ Current memory limit: " . ini_get("memory_limit") . " ] \n";
 echo "[ Set new memory limit ... ]\n";
-ini_set("memory_limit", 1);
+ini_set("memory_limit", "1M");
 echo "[ New memory limit: " . ini_get("memory_limit") . " ] \n";
 
 echo "[ START IMPORT ... ]\n";
 $csv = new CsvImport();
-$cnt = $csv->saveData(__DIR__ .'/import.csv', __DIR__ . '/result.csv', 1);
+$cnt = $csv->saveData('import.csv', 'result.csv', 1);
 echo "[ Lines written: $cnt ]\n";
 echo "[ DONE ]\n";
+
