@@ -8,4 +8,4 @@ Otus PHP Pro course: https://fas.st/wRyRs
 Mikhail Ikonnikov <mishaikon@gmail.com>
 
 # How to use
-see readme.md inside each directory
+see 'readme.txt' file inside each directory
