@@ -1,0 +1,34 @@
+security:
+    providers:
+        users_in_memory:
+            memory:
+                users:
+                    admin:
+                        password: 'my_pass'
+                        roles: 'ROLE_ADMIN'
+                    user:
+                        password: 'other_pass'
+                        roles: 'ROLE_USER'
+
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        api_doc:
+            http_basic:
+                realm: Secured Area
+            provider: users_in_memory
+        main:
+            http_basic:
+                realm: Secured Area
+            stateless: true
+            provider: users_in_memory
+
+    access_control:
+        - { path: ^/api/v1/user, roles: ROLE_ADMIN }
+        - { path: ^/api/v1/subscription, roles: ROLE_USER }
+        - { path: ^/api/v1/tweet, roles: ROLE_USER }
+        - { path: ^/api/doc, roles: ROLE_ADMIN }
