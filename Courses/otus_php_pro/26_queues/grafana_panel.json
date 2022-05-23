@@ -1,0 +1,192 @@
+﻿{
+  "id": 2,
+  "gridPos": {
+    "h": 9,
+    "w": 12,
+    "x": 0,
+    "y": 0
+  },
+  "type": "graph",
+  "title": "Panel Title",
+  "datasource": {
+    "type": "graphite",
+    "uid": "1u2QJ1u7k"
+  },
+  "thresholds": [],
+  "pluginVersion": "8.5.2",
+  "legend": {
+    "alignAsTable": true,
+    "avg": false,
+    "current": false,
+    "max": true,
+    "min": false,
+    "rightSide": true,
+    "show": true,
+    "sort": "max",
+    "sortDesc": true,
+    "total": false,
+    "values": true
+  },
+  "aliasColors": {},
+  "bars": false,
+  "dashLength": 10,
+  "dashes": false,
+  "fill": 1,
+  "fillGradient": 0,
+  "hiddenSeries": false,
+  "lines": true,
+  "linewidth": 1,
+  "nullPointMode": "null",
+  "options": {
+    "alertThreshold": true
+  },
+  "percentage": false,
+  "pointradius": 2,
+  "points": false,
+  "renderer": "flot",
+  "seriesOverrides": [],
+  "spaceLength": 10,
+  "stack": false,
+  "steppedLine": false,
+  "targets": [
+    {
+      "datasource": {
+        "type": "graphite",
+        "uid": "1u2QJ1u7k"
+      },
+      "refCount": 0,
+      "refId": "A",
+      "target": "stats_counts.my_app.update_feed_received_0",
+      "textEditor": true
+    },
+    {
+      "datasource": {
+        "type": "graphite",
+        "uid": "1u2QJ1u7k"
+      },
+      "hide": false,
+      "refCount": 0,
+      "refId": "B",
+      "target": "stats_counts.my_app.update_feed_received_1",
+      "textEditor": true
+    },
+    {
+      "datasource": {
+        "type": "graphite",
+        "uid": "1u2QJ1u7k"
+      },
+      "hide": false,
+      "refCount": 0,
+      "refId": "C",
+      "target": "stats_counts.my_app.update_feed_received_2",
+      "textEditor": true
+    },
+    {
+      "datasource": {
+        "type": "graphite",
+        "uid": "1u2QJ1u7k"
+      },
+      "hide": false,
+      "refCount": 0,
+      "refId": "D",
+      "target": "stats_counts.my_app.update_feed_received_3",
+      "textEditor": true
+    },
+    {
+      "datasource": {
+        "type": "graphite",
+        "uid": "1u2QJ1u7k"
+      },
+      "hide": false,
+      "refCount": 0,
+      "refId": "E",
+      "target": "stats_counts.my_app.update_feed_received_4",
+      "textEditor": true
+    },
+    {
+      "datasource": {
+        "type": "graphite",
+        "uid": "1u2QJ1u7k"
+      },
+      "hide": false,
+      "refCount": 0,
+      "refId": "F",
+      "target": "stats_counts.my_app.update_feed_received_5",
+      "textEditor": true
+    },
+    {
+      "datasource": {
+        "type": "graphite",
+        "uid": "1u2QJ1u7k"
+      },
+      "hide": false,
+      "refCount": 0,
+      "refId": "G",
+      "target": "stats_counts.my_app.update_feed_received_6",
+      "textEditor": true
+    },
+    {
+      "datasource": {
+        "type": "graphite",
+        "uid": "1u2QJ1u7k"
+      },
+      "hide": false,
+      "refCount": 0,
+      "refId": "H",
+      "target": "stats_counts.my_app.update_feed_received_7",
+      "textEditor": true
+    },
+    {
+      "datasource": {
+        "type": "graphite",
+        "uid": "1u2QJ1u7k"
+      },
+      "hide": false,
+      "refCount": 0,
+      "refId": "I",
+      "target": "stats_counts.my_app.update_feed_received_8",
+      "textEditor": true
+    },
+    {
+      "datasource": {
+        "type": "graphite",
+        "uid": "1u2QJ1u7k"
+      },
+      "hide": false,
+      "refCount": 0,
+      "refId": "J",
+      "target": "stats_counts.my_app.update_feed_received_9",
+      "textEditor": true
+    }
+  ],
+  "timeRegions": [],
+  "tooltip": {
+    "shared": true,
+    "sort": 0,
+    "value_type": "individual"
+  },
+  "xaxis": {
+    "mode": "time",
+    "show": true,
+    "values": [],
+    "name": null,
+    "buckets": null
+  },
+  "yaxes": [
+    {
+      "format": "short",
+      "logBase": 1,
+      "show": true
+    },
+    {
+      "format": "short",
+      "logBase": 1,
+      "show": true
+    }
+  ],
+  "yaxis": {
+    "align": false
+  },
+  "timeFrom": null,
+  "timeShift": null
+}
