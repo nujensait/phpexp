@@ -67,9 +67,11 @@ class OtusMaterialsParser
     private $cookie;
     private $body;
 
-    const TYPE_LINK = 'Перейти';
-    const TYPE_FILE = 'Скачать';
-    const OUTPUT_FILE = "otus_materials.txt";
+    const LOGIN         = 'mishaikon@mail.ru';
+    const PASS          = 'rR9LjjRN';
+    const TYPE_LINK     = 'Перейти';
+    const TYPE_FILE     = 'Скачать';
+    const OUTPUT_FILE   = "otus_materials.txt";
 
     public function __construct(string $domain)
     {
@@ -88,11 +90,9 @@ class OtusMaterialsParser
 
     /**
      * Make authentification on site
-     * @param $login
-     * @param $pass
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function doLogin(string $login, string $pass): bool
+    public function doLogin(): bool
     {
         /**
          * В метод request передается три параметра:
@@ -100,10 +100,10 @@ class OtusMaterialsParser
          * 2. URL на который отправляются данные формы
          * 3. forms_params - значения логина и пароля
          */
-        $login = $this->client->request('POST', '/login.html', [
+        $login = $this->client->request('POST', '/login', [
             'form_params' => [
-                'login' => $login,
-                'password' => $pass
+                'login' => self::LOGIN,
+                'password' => self::PASS
             ]
         ]);
 
@@ -138,7 +138,7 @@ class OtusMaterialsParser
         // html код страницы со скидками, например
         $body = $content->getBody()->getContents();
 
-        //echo substr($body, 0, 500) . "..."; die();
+        echo substr($body, 0, 500) . "..."; die();
 
         return $body;
     }
@@ -244,8 +244,9 @@ class OtusMaterialsParser
             if ($link['type'] == self::TYPE_FILE) {
                 $fileData = file_get_contents($link['url']);
                 $fileName = $this->getUrlFilename($link['url']);
-                file_put_contents($fileName, $fileData);
-                $this->printOut("Saving file '$fileName' ... Done");
+                $saveFileName = $link['name'];
+                file_put_contents($saveFileName, $fileData);
+                $this->printOut("Saving file '$saveFileName' ... Done");
                 die();      // @fixme: error here now: access denied
             }
         }
@@ -360,7 +361,7 @@ class OtusMaterialsParser
         if (is_file($url)) {
             $body = $this->readFile($url);
         } else {
-            // $this->doLogin('', '');
+            $this->doLogin();
             $body = $this->readPage($url);
         }
 
@@ -378,7 +379,7 @@ class OtusMaterialsParser
         // SAVE MATERIALS LINKS
         $links = $this->parseLinks();
         $this->saveLinks($links);
-        //$this->downloadLinks($links);
+        $this->downloadLinks($links);
 
         $this->printOut("Parsing complete.");
 
@@ -388,10 +389,11 @@ class OtusMaterialsParser
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-$parser = new OtusMaterialsParser('');      // prod : https://otus.ru/
+// debug
+$parser = new OtusMaterialsParser('');
+$parser->parsePage('page_sample.html');       // read local file
 
-// check
-//echo $parser->getUrlFilename("https://cdn.otus.ru/media/private/89/60/25_Queues_Part_1-50919-896006.pdf?hash=55hAWx9KU00_rsrYNPfAtg&expires=1659287468");   // expected: 25_Queues_Part_1-50919-896006.pdf
-
-$parser->parsePage('page_sample.html');
-
+// prod
+//$url = "https://otus.ru/learning/150123/";
+//$parser = new OtusMaterialsParser($url);
+//$parser->parsePage($url);                       // read remote page
