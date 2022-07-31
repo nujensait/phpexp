@@ -1,5 +1,5 @@
 # What is it
-Sources from course "OTUS PHP Professional" homeowork tasks 
+Sources from course "OTUS PHP Professional" homeWork tasks 
 
 # Source
 Otus PHP Pro course: https://fas.st/wRyRs
@@ -19,3 +19,7 @@ Mikhail Ikonnikov <mishaikon@gmail.com>
 
 # How to use
 See 'readme.txt' file inside each directory
+
+# Hack
+Use script to download all lessons materials from course:
+php /otus_php_pro/otus_parser/otus_materials_parser.php
