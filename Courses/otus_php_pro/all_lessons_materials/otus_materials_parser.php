@@ -12,48 +12,48 @@
 
 /**
  * Html data to parse, samples:
-
-<a href="#" class="learning-near__header-link js-learning-open" data-id="30855">
-<span class="learning-near__header-text">PHP WebServers</span>
-<span class="ic ic-fire learning-near__header-fire"></span>
-</a>
-
-<script type="text/html" data-id="182865" class="js-media-player-content">
-<div class="media-file">
-<div class="media-file__vertical">
-<div class="media-file__vertical-box">
-<video controls controlsList="nodownload" oncontextmenu="return false;" width="100%" height="100%" class="video-js vjs-16-9 vjs-big-play-centered" data-boomstream-src="https://play.boomstream.com/LpYDmBgv">
-Тег video не поддерживается вашим браузером
-</video>
-</div>
-</div>
-</div>
-</script>
-
-<script type="text/html" data-id="183125" class="js-media-player-content">
-<div class="media-link">
-<div class="media-link__box">
-<div class="media-link__icon ic ic-media-file"
-style="background-image: url(https://opengraph.githubassets.com/44788430e4956f3d199bc6b7e9bf219b6d831730d3cfaa3e5440f60fb148c58f/php/php-src);"></div>
-<div class="media-link__text">
-<div class="media-link__title">GitHub - php/php-src: The PHP Interpreter</div>
-<a class="media-link__link" target="_blank" href="https://github.com/php/php-src" title="Перейти">Перейти</a>
-</div>
-</div>
-</div>
-</script>
-
-<script type="text/html" data-id="181340" class="js-media-player-content">
-<div class="media-file">
-<div class="media-file__box">
-<div class="media-file__icon ic ic-media-file ic-media-"></div>
-<div class="media-file__text">
-<div class="media-file__title">Materials_07-02-2022.txt</div>
-<a class="media-file__link" target="_blank" href="https://cdn.otus.ru/media/private/bb/cc/Materials_07_02_2022-214266-bbcc4f.txt?hash=3JjT_MM2R_wTvF9H2w5fpg&expires=1659038785" title="Скачать">Скачать</a>
-</div>
-</div>
-</div>
-</script>
+ *
+ * <a href="#" class="learning-near__header-link js-learning-open" data-id="30855">
+ * <span class="learning-near__header-text">PHP WebServers</span>
+ * <span class="ic ic-fire learning-near__header-fire"></span>
+ * </a>
+ *
+ * <script type="text/html" data-id="182865" class="js-media-player-content">
+ * <div class="media-file">
+ * <div class="media-file__vertical">
+ * <div class="media-file__vertical-box">
+ * <video controls controlsList="nodownload" oncontextmenu="return false;" width="100%" height="100%" class="video-js vjs-16-9 vjs-big-play-centered" data-boomstream-src="https://play.boomstream.com/LpYDmBgv">
+ * Тег video не поддерживается вашим браузером
+ * </video>
+ * </div>
+ * </div>
+ * </div>
+ * </script>
+ *
+ * <script type="text/html" data-id="183125" class="js-media-player-content">
+ * <div class="media-link">
+ * <div class="media-link__box">
+ * <div class="media-link__icon ic ic-media-file"
+ * style="background-image: url(https://opengraph.githubassets.com/44788430e4956f3d199bc6b7e9bf219b6d831730d3cfaa3e5440f60fb148c58f/php/php-src);"></div>
+ * <div class="media-link__text">
+ * <div class="media-link__title">GitHub - php/php-src: The PHP Interpreter</div>
+ * <a class="media-link__link" target="_blank" href="https://github.com/php/php-src" title="Перейти">Перейти</a>
+ * </div>
+ * </div>
+ * </div>
+ * </script>
+ *
+ * <script type="text/html" data-id="181340" class="js-media-player-content">
+ * <div class="media-file">
+ * <div class="media-file__box">
+ * <div class="media-file__icon ic ic-media-file ic-media-"></div>
+ * <div class="media-file__text">
+ * <div class="media-file__title">Materials_07-02-2022.txt</div>
+ * <a class="media-file__link" target="_blank" href="https://cdn.otus.ru/media/private/bb/cc/Materials_07_02_2022-214266-bbcc4f.txt?hash=3JjT_MM2R_wTvF9H2w5fpg&expires=1659038785" title="Скачать">Скачать</a>
+ * </div>
+ * </div>
+ * </div>
+ * </script>
  */
 
 require 'vendor/autoload.php'; // автозагрузчик
@@ -69,8 +69,7 @@ class OtusMaterialsParser
 
     const TYPE_LINK = 'Перейти';
     const TYPE_FILE = 'Скачать';
-
-    private $OUTPUT_FILE = "otus_materials.txt";
+    const OUTPUT_FILE = "otus_materials.txt";
 
     public function __construct(string $domain)
     {
@@ -125,13 +124,13 @@ class OtusMaterialsParser
     public function readPage(string $url): string
     {
         $headers = [];
-        if($this->cookie) {
+        if ($this->cookie) {
             $headers['Cookie'] = $this->cookie;     // cookie is required to make auth
         }
 
         $content = $this->client->request('GET', $url, [
-          'headers' => $headers,
-           /*'debug' => true*/ // если захотите посмотреть что-же отправляет ваш скрипт, расскоментируйте
+            'headers' => $headers,
+            /*'debug' => true*/ // если захотите посмотреть что-же отправляет ваш скрипт, расскоментируйте
         ]);
 
         //print $articles -> getStatusCode();
@@ -161,7 +160,8 @@ class OtusMaterialsParser
     /**
      * Output debug text
      */
-    private function printOut(string $text) {
+    private function printOut(string $text)
+    {
         echo $text . "\n";
     }
 
@@ -178,14 +178,15 @@ class OtusMaterialsParser
 
         preg_match_all('/<div class="media-(file|link)__title">(.*?)<\/div>\s*<a class="media-(file|link)__link" target="_blank" href="(.*?)" title="(Перейти|Скачать)">(Перейти|Скачать)<\/a>/', $this->body, $matches, PREG_SET_ORDER);
 
-        if(is_array($matches)) {
-            foreach($matches as $match) {
+        if (is_array($matches)) {
+            foreach ($matches as $match) {
                 //var_dump($match); die();
-                $hdrName  = $match[2];
-                $fileName = $match[4];
-                $type     = $match[5];
+                $hdrName = trim($match[2]);
+                $fileName = trim($match[4]);
+                $type = $match[5];
 
-                $this->printOut(" - " . $fileName);
+                //$this->printOut(" - " . $fileName);
+
                 $links[] = ['name' => $hdrName, 'url' => $fileName, 'type' => $type];
             }
         } else {
@@ -202,16 +203,22 @@ class OtusMaterialsParser
      */
     private function saveLinks($links): bool
     {
-        $this->printOut("Saving links into file '".$this->OUTPUT_FILE."'...");
+        $this->printOut("Saving links into file '" . self::OUTPUT_FILE . "'...");
 
-        if(!is_array($links) || !count($links)) {
+        if (!is_array($links) || !count($links)) {
             return false;
         }
 
         $i = 0;
-        $fo = fopen($this->OUTPUT_FILE, "w");
-        foreach($links as $link) {
-            fwrite($fo, "* " . $link['name'] . "\n" . $link['url']. "\n\n");
+        $fo = fopen(self::OUTPUT_FILE, "a");
+        fwrite($fo, "\n\nСписок материалов:\n\n");
+
+        foreach ($links as $link) {
+            if ($link['type'] == self::TYPE_FILE) {
+                fwrite($fo, "* [" . self::TYPE_FILE . "] " . $link['name'] . "\n" . $link['url'] . "\n\n");
+            } else {
+                fwrite($fo, "* " . $link['name'] . "\n" . $link['url'] . "\n\n");
+            }
             $i++;
         }
 
@@ -229,23 +236,20 @@ class OtusMaterialsParser
      */
     private function downloadLinks($links): bool
     {
-        if(!is_array($links) || !count($links)) {
+        if (!is_array($links) || !count($links)) {
             return false;
         }
 
-        $fo = fopen($this->OUTPUT_FILE, "w");
-        foreach($links as $link) {
-            if($link['type'] == self::TYPE_FILE) {
+        foreach ($links as $link) {
+            if ($link['type'] == self::TYPE_FILE) {
                 $fileData = file_get_contents($link['url']);
                 $fileName = $this->getUrlFilename($link['url']);
                 file_put_contents($fileName, $fileData);
-
                 $this->printOut("Saving file '$fileName' ... Done");
-die();
+                die();      // @fixme: error here now: access denied
             }
         }
 
-        fclose($fo);
         return true;
     }
 
@@ -259,7 +263,7 @@ die();
     {
         $name = basename($url);
 
-        if(strstr($name, "?")) {
+        if (strstr($name, "?")) {
             $name = strtok($name, "?");
         }
 
@@ -268,28 +272,25 @@ die();
 
     /**
      * Read lessons heade names
-     * @return void
+     * @return array
      */
     private function parseHeaders(): array
     {
         $matches = [];
         preg_match_all('/<span class="learning-near__header-text">(.*?)<\/span>/', $this->body, $matches, PREG_SET_ORDER);
         //var_dump($matches); die();
-        $i = 1;
+
+        $i = 0;
         $names = [];
 
-        if(is_array($matches)) {
-            foreach($matches as $match) {
-                $this->printOut($i. ". " . $match[1]);
-
-                $names[] = $match[1];
-                $dirName = $i . " - " . $match[1];
-                if(!is_dir($dirName)) {
-                    @mkdir($dirName);
-                }
-
+        if (is_array($matches)) {
+            foreach ($matches as $match) {
+                $name = $match[1];
+                $names[] = $name;
+                $this->printOut(($i + 1) . ". ". $name);
                 $i++;
             }
+            $this->printOut("Lessons found: $i.");
         } else {
             $this->printOut("Error: Lessons headers not found.");
         }
@@ -298,32 +299,90 @@ die();
     }
 
     /**
+     * Save lessons names
+     * @param array $hdrs
+     * @return bool
+     */
+    private function saveHeaders(array $hdrs): bool
+    {
+        $i = 1;
+        if (is_array($hdrs) || !count($hdrs)) {
+            $this->printOut("Error: Lessons data is empty.");
+            return false;
+        }
+
+        $fo = fopen(self::OUTPUT_FILE, "a");
+
+        fwrite($fo, "Список лекций:\n");
+
+        foreach ($hdrs as $lessonName) {
+            $this->printOut($i . ". " . $lessonName);
+
+            // create dir with lesson
+            $dirName = $i . " - " . $lessonName;
+            if (!is_dir($dirName)) {
+                @mkdir($dirName);
+            }
+
+            // save lessons names into file
+            fwrite($fo, $i . ". " . $lessonName . "\n");
+            $i++;
+        }
+
+        fclose($fo);
+
+        return true;
+    }
+
+    /**
+     * Clean data before parser execution
+     * @return bool
+     */
+    private function cleanData(): bool
+    {
+        if (is_file(self::OUTPUT_FILE)) {
+            unlink(self::OUTPUT_FILE);
+        }
+
+        return true;
+    }
+
+    /**
      * Parse materials on page
      * @param string $url
      */
     public function parsePage(string $url): bool
     {
+        $this->cleanData();
+
         $this->printOut("Parsing page '$url' ...");
 
-        if(is_file($url)) {
+        if (is_file($url)) {
             $body = $this->readFile($url);
         } else {
             // $this->doLogin('', '');
             $body = $this->readPage($url);
         }
 
-        if(!$body) {
+        if (!$body) {
+            $this->printOut("Error: page body is empty.");
             return false;
         }
 
         $this->body = $body;
 
-        //$names = $this->parseHeaders();
+        // SAVE LESSONS NAMES
+        $hdrs = $this->parseHeaders();
+        $this->saveHeaders($hdrs);
+
+        // SAVE MATERIALS LINKS
         $links = $this->parseLinks();
         $this->saveLinks($links);
         //$this->downloadLinks($links);
 
-        return count($links) ? true : false;
+        $this->printOut("Parsing complete.");
+
+        return count($hdrs) && count($links) ? true : false;
     }
 }
 
