@@ -4,6 +4,8 @@
 
 1. Подготовка к курсу и инфраструктура ПО
 
+* Вебинар: https://play.boomstream.com/96LrffUU
+
 * PhpStorm — как подключиться к GitHub
 https://ploshadka.net/phpstorm-github/
 
@@ -56,6 +58,8 @@ https://cdn.otus.ru/media/private/28/c7/%D0%A1%D1%80%D0%B5%D0%B4%D0%B0___%D0%B8%
 
 2. Linux
 
+* Вебинар: https://play.boomstream.com/LpYDmBgv
+
 * [Скачать] Materials_07-02-2022.txt
 https://cdn.otus.ru/media/private/bb/cc/Materials_07_02_2022-214266-bbcc4f.txt?hash=6viu6IKoROPfy6llf6tX4A&expires=1659324441
 
@@ -71,6 +75,8 @@ https://cdn.otus.ru/media/private/37/b4/meeting_saved_chat-214266-37b497.txt?has
 ========================================================================================================================
 
 3. Внутреннее устройство PHP
+
+* Вебинар: https://play.boomstream.com/3TctSiPM
 
 * nikic&#39;s Blog
 https://www.npopov.com/
@@ -106,6 +112,8 @@ https://habr.com/ru/post/489360/
 
 4. Composer
 
+* Вебинар: https://play.boomstream.com/7YytcAec
+
 * [Скачать] meeting_saved_chat.txt
 https://cdn.otus.ru/media/private/ac/75/meeting_saved_chat-39289-ac75bc.txt?hash=TPyNLwjnDzUSuPpyTjnzQQ&expires=1659324441
 
@@ -140,6 +148,8 @@ https://github.com/kefranabg/readme-md-generator
 
 5. PHP WebServers
 
+* Вебинар: https://play.boomstream.com/zVreZbj3
+
 * Setting up nginx and PHP-FPM in Docker with Unix Sockets
 https://medium.com/@shrikeh/setting-up-nginx-and-php-fpm-in-docker-with-unix-sockets-6fdfbdc19f91
 
@@ -171,6 +181,8 @@ https://habr.com/ru/post/428127/
 
 6. Сети, протоколы. Балансировка. Безопасность
 
+* Вебинар: https://play.boomstream.com/fgm748ki
+
 * Балансировка бэкендов с помощью Nginx
 https://ruhighload.com/Балансировка+бэкендов+с+помощью+nginx
 
@@ -199,6 +211,8 @@ https://cdn.otus.ru/media/private/4d/7c/6___%D0%A1%D0%B5%D1%82%D0%B8__%D0%BF%D1%
 
 7. Командная разработка
 
+* Вебинар: https://play.boomstream.com/ByV92x20
+
 * [Скачать] OTUS_Командная_разработка-32066-f0499c.pdf
 https://cdn.otus.ru/media/private/f0/49/OTUS_%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B0%D1%8F_%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_32066_f0499c-45136-f0499c.pdf?hash=p7BNfUPYt_8dIvIcKHcZkw&expires=1659324441
 
@@ -221,6 +235,8 @@ https://cdn.otus.ru/media/private/17/87/chat-45136-1787e8.txt?hash=wRys0GZFyUEeG
 
 8. Основные понятия баз данных
 
+* Вебинар: https://play.boomstream.com/y2kFeWYl
+
 * «Истина в последней инстанции» или зачем нужен Database First Design
 https://habr.com/ru/post/413597/
 
@@ -239,6 +255,8 @@ https://cdn.otus.ru/media/private/d9/59/8___%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B
 ========================================================================================================================
 
 9. PostgreSQL для администратора
+
+* Вебинар: https://play.boomstream.com/utMsD5PK
 
 * Книга по PostgreSQL
 https://postgresql.leopard.in.ua/html/
@@ -262,6 +280,8 @@ https://cdn.otus.ru/media/private/5d/33/chat-28065-5d335f.txt?hash=l013urQG5JQH3
 
 10. PostgreSQL для разработчика
 
+* Вебинар: https://play.boomstream.com/8Rk75tX2
+
 * [Скачать] EAV-Cinema.sql
 https://cdn.otus.ru/media/private/53/16/EAV_Cinema-1801-5316f9.sql?hash=PDuhioGbox8dT56sDulzPQ&expires=1659324441
 
@@ -277,6 +297,8 @@ https://cdn.otus.ru/media/private/1c/81/chat-28065-1c8197.txt?hash=bj4W88O9lNK8A
 ========================================================================================================================
 
 11. Как устроен PostgreSQL
+
+* Вебинар: https://play.boomstream.com/ZsnC67Rr
 
 * [Скачать] trigger.sql
 https://cdn.otus.ru/media/private/a0/b2/trigger-28065-a0b23a.sql?hash=t5C0y3lmjpMQ2i7wi8mKLw&expires=1659324441
@@ -308,6 +330,8 @@ https://cdn.otus.ru/media/private/15/a0/work-28065-15a074.sql?hash=K9M0HvcbnnWOg
 ========================================================================================================================
 
 12. Другие SQL-решения
+
+* Вебинар: https://play.boomstream.com/vGZZFLXD
 
 * Tabix.io
 http://ui.tabix.io
@@ -343,6 +367,8 @@ https://habr.com/ru/post/538974/
 
 13. Redis
 
+* Вебинар: https://play.boomstream.com/qkyGdeYI
+
 * Redis Best Practices, часть 1
 https://habr.com/ru/post/485672/
 
@@ -371,6 +397,8 @@ https://redis.com/redis-enterprise/redis-insight/
 
 14. MySQL и форки
 
+* Вебинар: https://play.boomstream.com/EaULGT8H
+
 * [Скачать] MySQL_и_форки.pdf
 https://cdn.otus.ru/media/private/42/0d/MySQL_%D0%B8_%D1%84%D0%BE%D1%80%D0%BA%D0%B8_s0m_2022_01-145258-420dff.pdf?hash=gVwXf9lcRqwSg3C0IjCXaA&expires=1659324441
 
@@ -381,6 +409,8 @@ https://highload.today/kak-ispolzovat-indeksy-v-join-zaprosakh-mysql/
 
 15. PHP и базы данных
 
+* Вебинар: https://play.boomstream.com/7tEaHqEd
+
 * GitHub - ab-budaev/otus-php-database-patterns-lesson: This is a small repository to be used on the OTUS lesson about PHP Database patterns
 https://github.com/ab-budaev/otus-php-database-patterns-lesson
 
@@ -390,6 +420,8 @@ https://cdn.otus.ru/media/private/cc/69/PHP_%D0%B8_%D0%B1%D0%B0%D0%B7%D1%8B_%D0%
 ========================================================================================================================
 
 16. Парадигмы программирования
+
+* Вебинар: https://play.boomstream.com/6FsGmel0
 
 * Ликбез по типизации в языках программирования
 https://habr.com/en/post/161205/
@@ -425,6 +457,8 @@ http://learnyouahaskell.com/
 
 17. Архитектура кода
 
+* Вебинар: https://play.boomstream.com/kzqIUcvx
+
 * [Скачать] meeting_saved_chat.txt
 https://cdn.otus.ru/media/private/36/9a/meeting_saved_chat-39289-369a0f.txt?hash=-DZFhh0uSBi5ktpcm2-tGA&expires=1659324441
 
@@ -453,6 +487,8 @@ https://github.com/ivanpaulovich/hexagonal-architecture-acerola
 
 18. Design patterns. Часть 1
 
+* Вебинар: https://play.boomstream.com/euWBLTPK
+
 * Рефакторинг и Паттерны проектирования
 https://refactoring.guru/ru
 
@@ -469,6 +505,8 @@ https://cdn.otus.ru/media/private/f3/d1/patterns-50919-f3d156.zip?hash=eKoC_eGb_
 
 19. Design patterns. Часть 2
 
+* Вебинар:
+
 * [Скачать] 18_Design_patterns_part_2.pdf
 https://cdn.otus.ru/media/private/d8/db/18_Design_patterns_part_2-50919-d8db15.pdf?hash=wI5RX03F2ukuteaSYSq15A&expires=1659324441
 
@@ -478,6 +516,8 @@ https://cdn.otus.ru/media/private/37/2d/patterns2-50919-372d04.zip?hash=KNzm4uGl
 ========================================================================================================================
 
 20. Практики хорошего кода
+
+* Вебинар: https://play.boomstream.com/ZEnoaJAx
 
 * [Скачать] PHP – Практики хорошего кода v1.3.pdf
 https://cdn.otus.ru/media/private/da/22/PHP___%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B8_%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%B5%D0%B3%D0%BE_%D0%BA%D0%BE%D0%B4%D0%B0_v1.3-39289-da2296.pdf?hash=YNAcowC45RCZMxHuXai74A&expires=1659324441
@@ -498,12 +538,16 @@ https://www.ozon.ru/product/211433291
 
 21. Введение в тестирование
 
+* Вебинар: https://play.boomstream.com/xQnq7mh8
+
 * [Скачать] 20_Introduction_to_testing.pdf
 https://cdn.otus.ru/media/private/46/10/20_Introduction_to_testing_s0m_2022_01-145258-461061.pdf?hash=-7-1zuHyuZax7TiBlzQFaw&expires=1659324441
 
 ========================================================================================================================
 
 22. Unit-тестирование
+
+* Вебинар: https://play.boomstream.com/WEJRBw8B
 
 * [Скачать] Example-50919-16fdec.zip
 https://cdn.otus.ru/media/private/16/fd/Example-50919-16fdec.zip?hash=iDzI3xqm9sp0MGD5l5NiJw&expires=1659324441
@@ -530,6 +574,8 @@ https://cdn.otus.ru/media/private/23/05/21_Unit_tests_s0m_2022_01-145258-230531.
 
 23. Практикум по тестированию
 
+* Вебинар: https://play.boomstream.com/uIj0ITRA
+
 * [Скачать] target-50919-5a17a0.zip
 https://cdn.otus.ru/media/private/5a/17/target-50919-5a17a0.zip?hash=0gkvFM2dnJBwXnXE-bBBIg&expires=1659324441
 
@@ -545,6 +591,8 @@ https://cdn.otus.ru/media/private/27/4b/22_Tests_in_practice_s0m_2022_01-145258-
 ========================================================================================================================
 
 24. Алгоритмы
+
+* Вебинар: https://cdn.otus.ru/media/private/29/a2/PHP_2022_01_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B-39289-29a216.mp4?hash=x76_z4CkqH3IDRAl5AW-uQ&expires=1658897364
 
 * Массивы в РНР 7: хэш-таблицы
 https://habr.com/ru/company/mailru/blog/308240/
@@ -574,6 +622,8 @@ https://leetcode.com/
 
 25. Профилирование, логирование и мониторинг
 
+* Вебинар: https://cdn.otus.ru/media/private/8a/dd/video2875615589-214266-8add71.mp4?hash=6rm8-AuVbkQiVxY9Xud_NQ&expires=1658897364
+
 * [Скачать] profile, log, monitor.pdf
 https://cdn.otus.ru/media/private/50/a3/profile__log__monitor-214266-50a33f.pdf?hash=kcOz5OPIwlBpNzrt7guMOA&expires=1659324441
 
@@ -583,6 +633,8 @@ https://cdn.otus.ru/media/private/dc/fc/meeting_saved_chat-214266-dcfc36.txt?has
 ========================================================================================================================
 
 26. Очереди. Часть 1
+
+* Вебинар: https://play.boomstream.com/RTGAgrMo
 
 * [Скачать] 25_Queues_Part_1.pdf
 https://cdn.otus.ru/media/private/89/60/25_Queues_Part_1-50919-896006.pdf?hash=J6iqbKxdNDGHJQyeuzozHA&expires=1659324441
@@ -600,6 +652,8 @@ https://habr.com/ru/company/itsumma/blog/416629/
 
 27. Очереди. Часть 2
 
+* Вебинар: https://play.boomstream.com/BYd2Ps18
+
 * [Скачать] otus_project.zip
 https://cdn.otus.ru/media/private/90/8b/otus_project-50919-908b97.zip?hash=KtlCTeN36dVHzYLtBlHlgg&expires=1659324441
 
@@ -616,6 +670,8 @@ https://github.com/arnaud-lb/php-rdkafka
 
 28. Репликация
 
+* Вебинар: https://play.boomstream.com/SCbH01nQ
+
 * [Скачать] 28_Replication.pdf
 https://cdn.otus.ru/media/private/db/e1/28_Replication-50919-dbe129.pdf?hash=aRY_rFfH5f1YLcUJOLDiwQ&expires=1659324441
 
@@ -628,6 +684,8 @@ https://martin.kleppmann.com/2015/02/11/database-inside-out-at-salesforce.html
 ========================================================================================================================
 
 29. Проектирование API
+
+* Вебинар: https://play.boomstream.com/MPrtPL64
 
 * [Скачать] meeting_saved_chat.txt
 https://cdn.otus.ru/media/private/07/97/meeting_saved_chat-39289-07975b.txt?hash=Qg5Qxd0-RMBrHpsoQ2B1rg&expires=1659324441
@@ -645,12 +703,16 @@ https://stackoverflow.com/questions/942951/rest-api-error-return-good-practices
 
 30. Шардинг
 
+* Вебинар: https://play.boomstream.com/whjsIFbV
+
 * [Скачать] 29_Sharding.pdf
 https://cdn.otus.ru/media/private/2d/1b/29_Sharding-50919-2d1b4d.pdf?hash=UBx7FqC6QjnDUmTi3ShKJw&expires=1659324441
 
 ========================================================================================================================
 
 31. Кеширование
+
+* Вебинар: https://play.boomstream.com/oIy1FjqS
 
 * [Скачать] PHP – Кэширование v1.2.pdf
 https://cdn.otus.ru/media/private/41/9d/PHP___%D0%9A%D1%8D%D1%88%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_v1.2-39289-419d2c.pdf?hash=goRDvpWdsEWr6Zp8F48tTg&expires=1659324441
@@ -665,12 +727,16 @@ https://github.com/DmitryKirillov/otus-php-cache
 
 32. Deploy приложений
 
+* Вебинар: https://play.boomstream.com/64X6BWuD
+
 * [Скачать] 31_Deploying.pdf
 https://cdn.otus.ru/media/private/b0/c8/31_Deploying-50919-b0c859.pdf?hash=lXLjDXhxwbE4AqxsQ1qkOA&expires=1659324441
 
 ========================================================================================================================
 
 33. Практикум по разворачиванию приложений
+
+* Вебинар: https://play.boomstream.com/Z5ZS0sWZ
 
 * Mikhail Kamorin / php-deploy-demo-06-22 · GitLab
 https://gitlab.com/raptor-mvk/php-deploy-demo-06-22
@@ -684,6 +750,8 @@ https://cdn.otus.ru/media/private/92/27/32_Deployment_practice-50919-9227fc.pdf?
 ========================================================================================================================
 
 34. Site Reliability Engineering
+
+* Вебинар: https://play.boomstream.com/BxwkENQC
 
 * [Скачать] 33_Site_Reliability_Engineering.pdf
 https://cdn.otus.ru/media/private/21/cd/33_Site_Reliability_Engineering-50919-21cd9b.pdf?hash=-Tf7MoqSZbS_axlQfHgVrg&expires=1659324441
@@ -703,14 +771,14 @@ https://docs.google.com/presentation/d/1ugjXX1yX400tUXxBIZaLgiwlJwpl3EzQ5fF2sp3w
 * Проекты PHP 2021-07
 https://docs.google.com/spreadsheets/d/1Ux3Z8H6IpDczpRA9yfvMDGTyBt_I7SjnzI5hJLOKYh0/edit#gid=0
 
+* [Скачать] chat.txt
+https://cdn.otus.ru/media/private/17/35/chat-45136-173570.txt?hash=0i9UBTpMt6tSFH52t8qQTw&expires=1659324441
+
 ========================================================================================================================
 
 36. Консультация по проектам и домашним заданиям
 
 * вебинар: https://play.boomstream.com/DEa4aPT5
-
-* [Скачать] chat.txt
-https://cdn.otus.ru/media/private/17/35/chat-45136-173570.txt?hash=0i9UBTpMt6tSFH52t8qQTw&expires=1659324441
 
 * [Скачать] chat.txt
 https://cdn.otus.ru/media/private/6b/1f/chat-45136-6b1f36.txt?hash=NHMu5qgC9lPlqKMsZ0Lu3Q&expires=1659324441
@@ -727,5 +795,7 @@ https://cdn.otus.ru/media/private/df/47/%D0%92%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0%D1%
 ========================================================================================================================
 
 38. Подведение итогов
+
+* Вебинар: -
 
 ========================================================================================================================
