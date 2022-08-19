@@ -1,0 +1,574 @@
+
+
+Список материалов:
+
+* PhpStorm — как подключиться к GitHub
+https://ploshadka.net/phpstorm-github/
+
+* Интеграция VSCode с GitHub
+https://channel9.msdn.com/Series/Visual-Studio-Code----Mac/code6
+
+* Роберт Мартин - Чистый код
+https://www.ozon.ru/context/detail/id/142429922/
+
+* [Скачать] Мануалы по виртуалкам.txt
+https://cdn.otus.ru/media/private/c4/9a/%D0%9C%D0%B0%D0%BD%D1%83%D0%B0%D0%BB%D1%8B_%D0%BF%D0%BE_%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D0%BA%D0%B0%D0%BC-45136-c49ac7.txt?hash=Z1tuz2R39baUWO06nN43jw&expires=1659324441
+
+* Git - Book
+https://git-scm.com/book/ru/v2
+
+* Шпаргалка по git-flow
+https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html
+
+* [Скачать] Список литературы.txt
+https://cdn.otus.ru/media/private/1e/62/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%BB%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D1%8B-45136-1e62b7.txt?hash=4mp59mANWVtoLNV8HLpRwg&expires=1659324441
+
+* Инструкция Личный кабинет студента
+https://docs.google.com/presentation/d/17fs6RI_Aqc58eMbmvK6Ww-DYXL-U2O4lbG6LaHvkmjc/edit?usp=sharing
+
+* Как попасть на занятие в Zoom?
+https://docs.google.com/presentation/d/1I43BcOz4BgNZcovmA3ypz7jB_583nb8ADXb5PmA2ELg/edit?usp=sharing
+
+* Laravel Homestead - Laravel - The PHP Framework For Web Artisans
+https://laravel.com/docs/8.x/homestead
+
+* Downloads | Vagrant by HashiCorp
+https://www.vagrantup.com/downloads
+
+* Downloads – Oracle VM VirtualBox
+https://www.virtualbox.org/wiki/Downloads
+
+* [Скачать] chat.txt
+https://cdn.otus.ru/media/private/a6/35/chat-45136-a63585.txt?hash=og_taJqEWfFPIH6uvr-ThQ&expires=1659324441
+
+* [Скачать] Введение.pptx
+https://cdn.otus.ru/media/private/38/ef/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-45136-38ef0c.pptx?hash=tqJ6aj6XYxDZ_bVEV_CFPw&expires=1659324441
+
+* [Скачать] Простой контейнер - исходники.zip
+https://cdn.otus.ru/media/private/90/35/%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9_%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80___%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8-45136-9035e0.zip?hash=19e0VWLCzoqXiBQeWIXseQ&expires=1659324441
+
+* [Скачать] Среда - исходники.zip
+https://cdn.otus.ru/media/private/28/c7/%D0%A1%D1%80%D0%B5%D0%B4%D0%B0___%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8-45136-28c754.zip?hash=x0CaFgO8y_8XWtBzdfHIKw&expires=1659324441
+
+* [Скачать] Materials_07-02-2022.txt
+https://cdn.otus.ru/media/private/bb/cc/Materials_07_02_2022-214266-bbcc4f.txt?hash=6viu6IKoROPfy6llf6tX4A&expires=1659324441
+
+* [Скачать] example_nginx.log
+https://cdn.otus.ru/media/private/e7/f6/example_nginx-214266-e7f627.log?hash=eAhApmkzBpAZx0KTEm-lcA&expires=1659324441
+
+* [Скачать] Linux.pptx
+https://cdn.otus.ru/media/private/54/0e/Linux-214266-540e5a.pptx?hash=ETVPV8gp_FzOFtdb5v1U7w&expires=1659324441
+
+* [Скачать] meeting_saved_chat.txt
+https://cdn.otus.ru/media/private/37/b4/meeting_saved_chat-214266-37b497.txt?hash=VXDFNGh8xLO3ErHzgea25Q&expires=1659324441
+
+* nikic&#39;s Blog
+https://www.npopov.com/
+
+* PHP Internals Book
+https://www.phpinternalsbook.com/
+
+* [Скачать] meeting_saved_chat.txt
+https://cdn.otus.ru/media/private/2c/47/meeting_saved_chat-39289-2c47ae.txt?hash=y0JW6HUsFtzMOdDKpoyhwA&expires=1659324441
+
+* GitHub - php/php-src: The PHP Interpreter
+https://github.com/php/php-src
+
+* Welcome - PHP Language Specification
+https://phplang.org/
+
+* AST explorer
+https://astexplorer.net/
+
+* 3v4l.org - online PHP shell with 250+ PHP versions
+https://3v4l.org/
+
+* Обзор расширения OPCache для PHP
+https://habr.com/ru/company/vk/blog/310054/
+
+* Ломаем сбор мусора и десериализацию в PHP
+https://habr.com/ru/company/vk/blog/308242/
+
+* Разбираемся с управлением памятью в современных языках программирования
+https://habr.com/ru/post/489360/
+
+* [Скачать] meeting_saved_chat.txt
+https://cdn.otus.ru/media/private/ac/75/meeting_saved_chat-39289-ac75bc.txt?hash=TPyNLwjnDzUSuPpyTjnzQQ&expires=1659324441
+
+* How to deploy correctly when using Composer&#39;s develop / production switch?
+https://stackoverflow.com/questions/21721495/how-to-deploy-correctly-when-using-composers-develop-production-switch
+
+* Современный PHP без фреймворков
+https://habr.com/ru/company/vk/blog/352122/
+
+* Composer для самых маленьких
+https://habr.com/ru/post/439200/
+
+* Composer 2: Что нового?
+https://habr.com/ru/post/524916/
+
+* PHP Composer: фиксим зависимости без боли
+https://habr.com/ru/company/badoo/blog/473654/
+
+* Composer
+https://getcomposer.org/doc/
+
+* 21 совет по эффективному использованию Composer
+https://habr.com/ru/company/vk/blog/346488/
+
+* [Скачать] PHP – Composer v1.0.pdf
+https://cdn.otus.ru/media/private/50/da/PHP___Composer_v1.0-39289-50da36.pdf?hash=mRuwr0Xmg1zGOjYLkOfQTA&expires=1659324441
+
+* GitHub - kefranabg/readme-md-generator: 📄 CLI that generates beautiful README.md files
+https://github.com/kefranabg/readme-md-generator
+
+* Setting up nginx and PHP-FPM in Docker with Unix Sockets
+https://medium.com/@shrikeh/setting-up-nginx-and-php-fpm-in-docker-with-unix-sockets-6fdfbdc19f91
+
+* Модуль ngx_http_upstream_module
+https://nginx.org/ru/docs/http/ngx_http_upstream_module.html
+
+* Оптимальная настройка Nginx
+https://ruhighload.com/%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F+%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0+nginx
+
+* PHP: кеширование PHP-скриптов — настройка и тюнинг OpCache
+https://rtfm.co.ua/php-keshirovanie-php-skriptov-nastrojka-i-tyuning-opcache/
+
+* egerasimchuk/otus-php-example
+https://github.com/egerasimchuk/otus-php-example/tree/php/web-servers
+
+* Difference between PHP-CGI and PHP-FPM | BaseZap
+https://www.basezap.com/difference-php-cgi-php-fpm/
+
+* Nginx vs Apache: Which Web Server Is the Best? (2020 Edition)
+https://kinsta.com/blog/nginx-vs-apache/
+
+* Introduction to PHP Socket Programming - Web and Mobile Tutorials
+https://webmobtuts.com/backend-development/introduction-to-php-sockets-programming/
+
+* Nginx cache: всё новое — хорошо забытое старое
+https://habr.com/ru/post/428127/
+
+* Балансировка бэкендов с помощью Nginx
+https://ruhighload.com/Балансировка+бэкендов+с+помощью+nginx
+
+* [Скачать] Nginx Containers.zip
+https://cdn.otus.ru/media/private/e4/ad/Nginx_Containers-45136-e4adfb.zip?hash=ShmwoWoSjTuRluFJ_M4RCA&expires=1659324441
+
+* [Скачать] Веб-сервера.pptx
+https://cdn.otus.ru/media/private/4c/93/%D0%92%D0%B5%D0%B1_%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%B0-45136-4c93b3.pptx?hash=vLxOF8MSLyx9G-Hcolphag&expires=1659324441
+
+* [Скачать] chat.txt
+https://cdn.otus.ru/media/private/80/d9/chat-45136-80d940.txt?hash=MJayqVc1Kl3iFo59YX4OFA&expires=1659324441
+
+* Балансировка бэкендов с помощью Nginx
+https://ruhighload.com/%D0%91%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0+%D0%B1%D1%8D%D0%BA%D0%B5%D0%BD%D0%B4%D0%BE%D0%B2+%D1%81+%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E+nginx
+
+* Сети для самых маленьких. Часть нулевая. Планирование / linkmeup
+https://linkmeup.ru/blog/11.html
+
+* OWASP Top Ten Web Application Security Risks | OWASP
+https://owasp.org/www-project-top-ten/
+
+* [Скачать] 6 - Сети, протоколы. Балансировка. Безопасность.pdf
+https://cdn.otus.ru/media/private/4d/7c/6___%D0%A1%D0%B5%D1%82%D0%B8__%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B._%D0%91%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0._%D0%91%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C-28065-4d7ca3.pdf?hash=Wo3zxUvi-05BIb5i5zw8BQ&expires=1659324441
+
+* [Скачать] OTUS_Командная_разработка-32066-f0499c.pdf
+https://cdn.otus.ru/media/private/f0/49/OTUS_%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B0%D1%8F_%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_32066_f0499c-45136-f0499c.pdf?hash=p7BNfUPYt_8dIvIcKHcZkw&expires=1659324441
+
+* Как привести дела в порядок. Искусство продуктивности без стресса
+https://www.labirint.ru/books/507367
+
+* Джедайские техники. Как воспитать свою обезьяну, опустошить инбокс и сберечь мыслетопливо
+https://www.labirint.ru/books/580693/
+
+* Тайм-драйв. Как успевать жить и работать
+https://www.labirint.ru/books/321833/
+
+* Думай медленно... решай быстро
+https://www.labirint.ru/books/414866/
+
+* [Скачать] chat.txt
+https://cdn.otus.ru/media/private/17/87/chat-45136-1787e8.txt?hash=wRys0GZFyUEeGKkPiSdXBw&expires=1659324441
+
+* «Истина в последней инстанции» или зачем нужен Database First Design
+https://habr.com/ru/post/413597/
+
+* Базы данных. Вводный курс
+http://citforum.ru/database/advanced_intro/
+
+* [Скачать] chat.txt
+https://cdn.otus.ru/media/private/6b/6a/chat-28065-6b6abf.txt?hash=425bUHEyYhOiR0qlSfAeuQ&expires=1659324441
+
+* [Скачать] 8 - основы БД.pdf
+https://cdn.otus.ru/media/private/a3/ca/8___%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B_%D0%91%D0%94-28065-a3cad5.pdf?hash=ybxg3owQ_E-LQlM4wcy-bw&expires=1659324441
+
+* [Скачать] 8 - основы БД - НФ.pdf
+https://cdn.otus.ru/media/private/d9/59/8___%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B_%D0%91%D0%94___%D0%9D%D0%A4-28065-d95902.pdf?hash=d3ueMlmmqKtsyqUNZWfFPQ&expires=1659324441
+
+* Книга по PostgreSQL
+https://postgresql.leopard.in.ua/html/
+
+* PGTune - calculate configuration for PostgreSQL
+https://pgtune.leopard.in.ua/
+
+* Cybertec Postgres Configurator
+http://pgconfigurator.cybertec.at/
+
+* Документация: PostgreSQL 14
+https://postgrespro.ru/docs/postgresql/14/index
+
+* [Скачать] 9 - PG Admin.pdf
+https://cdn.otus.ru/media/private/8b/8d/9___PG_Admin-28065-8b8dfa.pdf?hash=3xQd39QsEW2KRWs4dPAr4g&expires=1659324441
+
+* [Скачать] chat.txt
+https://cdn.otus.ru/media/private/5d/33/chat-28065-5d335f.txt?hash=l013urQG5JQH3Oc77T33Uw&expires=1659324441
+
+* [Скачать] EAV-Cinema.sql
+https://cdn.otus.ru/media/private/53/16/EAV_Cinema-1801-5316f9.sql?hash=PDuhioGbox8dT56sDulzPQ&expires=1659324441
+
+* [Скачать] round.sql
+https://cdn.otus.ru/media/private/5b/cf/round-1801-5bcf45.sql?hash=wG-oUTh7O0Xjo-Yy6WSFAQ&expires=1659324441
+
+* [Скачать] 10 - PG разработчик.pdf
+https://cdn.otus.ru/media/private/81/69/10___PG_%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA-28065-8169b0.pdf?hash=9qqLPtgxOriZxQhpHM3u8w&expires=1659324441
+
+* [Скачать] chat.txt
+https://cdn.otus.ru/media/private/1c/81/chat-28065-1c8197.txt?hash=bj4W88O9lNK8AjCfEmKevA&expires=1659324441
+
+* [Скачать] trigger.sql
+https://cdn.otus.ru/media/private/a0/b2/trigger-28065-a0b23a.sql?hash=t5C0y3lmjpMQ2i7wi8mKLw&expires=1659324441
+
+* [Скачать] partitions.sql
+https://cdn.otus.ru/media/private/4d/f1/partitions-28065-4df18d.sql?hash=2IEWrznYkQ5fVmvyfHShwg&expires=1659324441
+
+* Explain PostgreSQL
+https://explain.tensor.ru/
+
+* New explain | explain.depesz.com
+https://explain.depesz.com/
+
+* Index Maintenance
+https://wiki.postgresql.org/wiki/Index_Maintenance
+
+* [Скачать] random_string.sql
+https://cdn.otus.ru/media/private/db/b2/random_string-1801-dbb2d1.sql?hash=h3ZDS81jTs8l5CitfEf6Hg&expires=1659324441
+
+* [Скачать] 11 - Как устроен PG.pdf
+https://cdn.otus.ru/media/private/73/e5/11___%D0%9A%D0%B0%D0%BA_%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD_PG-28065-73e5dc.pdf?hash=SeiLKtG8FTEsIcF3FhTgUQ&expires=1659324441
+
+* [Скачать] chat.txt
+https://cdn.otus.ru/media/private/df/98/chat-28065-df9870.txt?hash=jN7eE4WDD6D-4laQUOAksA&expires=1659324441
+
+* [Скачать] work.sql
+https://cdn.otus.ru/media/private/15/a0/work-28065-15a074.sql?hash=K9M0HvcbnnWOgkpr11j9wg&expires=1659324441
+
+* Tabix.io
+http://ui.tabix.io
+
+* Радио-Т Подкаст
+http://radio-t.com
+
+* OnTime - Документация ClickHouse
+https://clickhouse.yandex/docs/ru/getting_started/example_datasets/ontime/
+
+* smi2/phpclickhouse - Packagist
+https://packagist.org/packages/smi2/phpclickhouse
+
+* Robo 3T | Free, open-source MongoDB GUI (formerly Robomongo)
+https://robomongo.org/
+
+* egerasimchuk/docker-laravel
+https://github.com/egerasimchuk/docker-laravel
+
+* egerasimchuk/otus-php-elasticsearch
+https://github.com/egerasimchuk/otus-php-elasticsearch
+
+* [Скачать] Clickhouse_and_Elasticsearch.pdf
+https://cdn.otus.ru/media/private/7c/2b/Clickhouse_and_Elasticsearch_s0m_2022_01-145258-7c2b5f.pdf?hash=K69qiWRfawtKvvee7fxN6A&expires=1659324441
+
+* Изучаем ELK. Часть I — Установка Elasticsearch
+https://habr.com/ru/post/538840/
+
+* Изучаем ELK. Часть II — Установка Kibana и Logstash
+https://habr.com/ru/post/538974/
+
+* Redis Best Practices, часть 1
+https://habr.com/ru/post/485672/
+
+* Redis Persistence – Redis
+http://redis.io/topics/persistence
+
+* How to Benchmark the Performance of a Redis Server on Ubuntu 18.04 | DigitalOcean
+https://www.digitalocean.com/community/tutorials/how-to-perform-redis-benchmark-tests
+
+* [Скачать] PHP – Redis v1.3.pdf
+https://cdn.otus.ru/media/private/05/bb/PHP___Redis_v1.3-39289-05bb1a.pdf?hash=UPSkghUZ2K7VQzG-dUu09Q&expires=1659324441
+
+* [Скачать] meeting_saved_chat.txt
+https://cdn.otus.ru/media/private/6e/11/meeting_saved_chat-39289-6e11ea.txt?hash=RAWBFYjBlPRcEo769jb6bQ&expires=1659324441
+
+* Command reference – Redis
+https://redis.io/commands
+
+* Маленькая книга о Redis
+https://900913.ru/2014/03/05/little-redis-book/
+
+* RedisInsight | The Best Redis GUI
+https://redis.com/redis-enterprise/redis-insight/
+
+* [Скачать] MySQL_и_форки.pdf
+https://cdn.otus.ru/media/private/42/0d/MySQL_%D0%B8_%D1%84%D0%BE%D1%80%D0%BA%D0%B8_s0m_2022_01-145258-420dff.pdf?hash=gVwXf9lcRqwSg3C0IjCXaA&expires=1659324441
+
+* Как использовать индексы в JOIN запросах Mysql - Highload.today
+https://highload.today/kak-ispolzovat-indeksy-v-join-zaprosakh-mysql/
+
+* GitHub - ab-budaev/otus-php-database-patterns-lesson: This is a small repository to be used on the OTUS lesson about PHP Database patterns
+https://github.com/ab-budaev/otus-php-database-patterns-lesson
+
+* [Скачать] PHP_и_базы_данных_s0m-2022-01.pdf
+https://cdn.otus.ru/media/private/cc/69/PHP_%D0%B8_%D0%B1%D0%B0%D0%B7%D1%8B_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_s0m_2022_01-145258-cc691d.pdf?hash=WHFrMM-3IbZnS8UeVls7CQ&expires=1659324441
+
+* Ликбез по типизации в языках программирования
+https://habr.com/en/post/161205/
+
+* λ-исчисление. Часть первая: история и теория
+https://habr.com/en/post/215807/
+
+* λ-исчисление. Часть вторая: практика
+https://habr.com/en/post/215991/
+
+* [Скачать] PHP – Парадигмы программирования v1.3.pdf
+https://cdn.otus.ru/media/private/91/f0/PHP___%D0%9F%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D1%8B_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_v1.3-39289-91f0c8.pdf?hash=udxCLBwsSPsK9zKt461Jkw&expires=1659324441
+
+* PHP: Стрелочные функции - Manual
+https://www.php.net/manual/ru/functions.arrow.php
+
+* Реактивное программирование на реальных примерах: подробное введение
+https://tproger.ru/translations/reactive-programming/
+
+* Стрелочные функции в PHP 7.4
+https://habr.com/ru/post/476242/
+
+* [Скачать] Необязательное домашнее задание.pdf
+https://cdn.otus.ru/media/private/a7/d9/%D0%9D%D0%B5%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B5%D0%B5_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-39289-a7d994.pdf?hash=c0Uc-if66w4Uf5E5lb_dIQ&expires=1659324441
+
+* [Скачать] meeting_saved_chat.txt
+https://cdn.otus.ru/media/private/24/cc/meeting_saved_chat-39289-24cc37.txt?hash=0wDqFdElE2gwq5KO7_M2Xg&expires=1659324441
+
+* Learn You a Haskell for Great Good!
+http://learnyouahaskell.com/
+
+* [Скачать] meeting_saved_chat.txt
+https://cdn.otus.ru/media/private/36/9a/meeting_saved_chat-39289-369a0f.txt?hash=-DZFhh0uSBi5ktpcm2-tGA&expires=1659324441
+
+* [Скачать] PHP – Архитектура кода v1.2.pdf
+https://cdn.otus.ru/media/private/ea/0b/PHP___%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%BA%D0%BE%D0%B4%D0%B0_v1.2-39289-ea0ba6.pdf?hash=ZZso-l03zkNZhTZpqiCBWw&expires=1659324441
+
+* Репозиторий с занятия
+https://github.com/DmitryKirillov/otus-php-architecture
+
+* GitHub - CodelyTV/php-ddd-example: 🐘🎯 Hexagonal Architecture + DDD + CQRS in PHP using Symfony 5
+https://github.com/CodelyTV/php-ddd-example
+
+* GitHub - codeliner/php-ddd-cargo-sample: PHP 7 Version of the cargo sample used in Eric Evans DDD book
+https://github.com/codeliner/php-ddd-cargo-sample
+
+* GitHub - thombergs/buckpal: An example approach for implementing a Clean/Hexagonal Architecture
+https://github.com/thombergs/buckpal
+
+* GitHub - Sairyss/domain-driven-hexagon: Guide on Domain-Driven Design, software architecture, design patterns, best practices etc. with code examples
+https://github.com/Sairyss/domain-driven-hexagon
+
+* GitHub - ivanpaulovich/hexagonal-architecture-acerola: An Hexagonal Architecture service template with DDD, CQRS, TDD and SOLID using .NET Core 2.0. All small features are testable and could be mocked. Adapters could be mocked or exchanged.
+https://github.com/ivanpaulovich/hexagonal-architecture-acerola
+
+* Рефакторинг и Паттерны проектирования
+https://refactoring.guru/ru
+
+* kamranahmedse/design-patterns-for-humans
+https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md
+
+* [Скачать] 17_Design_patterns_part_1.pdf
+https://cdn.otus.ru/media/private/c3/e0/17_Design_patterns_part_1-145258-c3e0f3.pdf?hash=1E-QgWz1NWnguuEcFMqhvA&expires=1659324441
+
+* [Скачать] patterns.zip
+https://cdn.otus.ru/media/private/f3/d1/patterns-50919-f3d156.zip?hash=eKoC_eGb_GvcGm1tp4k7iQ&expires=1659324441
+
+* [Скачать] 18_Design_patterns_part_2.pdf
+https://cdn.otus.ru/media/private/d8/db/18_Design_patterns_part_2-50919-d8db15.pdf?hash=wI5RX03F2ukuteaSYSq15A&expires=1659324441
+
+* [Скачать] patterns2.zip
+https://cdn.otus.ru/media/private/37/2d/patterns2-50919-372d04.zip?hash=KNzm4uGlF3GCGBH6nBRtaA&expires=1659324441
+
+* [Скачать] PHP – Практики хорошего кода v1.3.pdf
+https://cdn.otus.ru/media/private/da/22/PHP___%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B8_%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%B5%D0%B3%D0%BE_%D0%BA%D0%BE%D0%B4%D0%B0_v1.3-39289-da2296.pdf?hash=YNAcowC45RCZMxHuXai74A&expires=1659324441
+
+* [Скачать] meeting_saved_chat.txt
+https://cdn.otus.ru/media/private/b7/70/meeting_saved_chat-39289-b77063.txt?hash=ynt8AtX1_Z4ie01vbkC3nA&expires=1659324441
+
+* Разговор о качестве кода - zhurov.me
+http://zhurov.me/blog/code-quality-talks.html
+
+* Совершенный код
+https://www.ozon.ru/product/138437220
+
+* Чистый код
+https://www.ozon.ru/product/211433291
+
+* [Скачать] 20_Introduction_to_testing.pdf
+https://cdn.otus.ru/media/private/46/10/20_Introduction_to_testing_s0m_2022_01-145258-461061.pdf?hash=-7-1zuHyuZax7TiBlzQFaw&expires=1659324441
+
+* [Скачать] Example-50919-16fdec.zip
+https://cdn.otus.ru/media/private/16/fd/Example-50919-16fdec.zip?hash=iDzI3xqm9sp0MGD5l5NiJw&expires=1659324441
+
+* [Скачать] Guide_Writing_Testable_Code-50919-1d8691.pdf
+https://cdn.otus.ru/media/private/1d/86/Guide_Writing_Testable_Code-50919-1d8691.pdf?hash=JILj7BnDsGqfE7Fo5lm6tQ&expires=1659324441
+
+* Мутационное тестирование
+https://habr.com/ru/post/334394/
+
+* Mockery — Mockery Docs 1.0-alpha documentation
+http://docs.mockery.io/en/latest/
+
+* infection/infection
+https://github.com/infection/infection/
+
+* PHPUnit Manual — PHPUnit 9.5 Manual
+https://phpunit.readthedocs.io/en/9.5/
+
+* [Скачать] 21_Unit_tests.pdf
+https://cdn.otus.ru/media/private/23/05/21_Unit_tests_s0m_2022_01-145258-230531.pdf?hash=pvyNw6ix7DCiZM0i-mce6A&expires=1659324441
+
+* [Скачать] target-50919-5a17a0.zip
+https://cdn.otus.ru/media/private/5a/17/target-50919-5a17a0.zip?hash=0gkvFM2dnJBwXnXE-bBBIg&expires=1659324441
+
+* 03-AcceptanceTests - Codeception - Documentation
+https://codeception.com/docs/03-AcceptanceTests
+
+* GitHub - SeleniumHQ/docker-selenium: Docker images for the Selenium Grid Server
+https://github.com/SeleniumHQ/docker-selenium
+
+* [Скачать] 22_Tests_in_practice.pdf
+https://cdn.otus.ru/media/private/27/4b/22_Tests_in_practice_s0m_2022_01-145258-274bdd.pdf?hash=-Ctey2LfpOvQnyZ_XD-Vbw&expires=1659324441
+
+* Массивы в РНР 7: хэш-таблицы
+https://habr.com/ru/company/mailru/blog/308240/
+
+* [Скачать] PHP – Алгоритмы v1.2.pdf
+https://cdn.otus.ru/media/private/de/28/PHP___%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B_v1.2-39289-de289e.pdf?hash=4DX7Aaiefip0OZbZ5-_btw&expires=1659324441
+
+* [Скачать] meeting_saved_chat.txt
+https://cdn.otus.ru/media/private/01/ac/meeting_saved_chat-39289-01ac02.txt?hash=B1H7nlW-QOjQ0sv5U9iAdw&expires=1659324441
+
+* Школа программиста
+https://acmp.ru/
+
+* Timus Online Judge
+https://timus.online/
+
+* Алгоритмическое программирование
+https://algoprog.ru/
+
+* Информатикс
+https://informatics.msk.ru/
+
+* LeetCode - The World&#39;s Leading Online Programming Learning Platform
+https://leetcode.com/
+
+* [Скачать] profile, log, monitor.pdf
+https://cdn.otus.ru/media/private/50/a3/profile__log__monitor-214266-50a33f.pdf?hash=kcOz5OPIwlBpNzrt7guMOA&expires=1659324441
+
+* [Скачать] meeting_saved_chat.txt
+https://cdn.otus.ru/media/private/dc/fc/meeting_saved_chat-214266-dcfc36.txt?hash=I5zan_Y53fdVAflAXUQ9QQ&expires=1659324441
+
+* [Скачать] 25_Queues_Part_1.pdf
+https://cdn.otus.ru/media/private/89/60/25_Queues_Part_1-50919-896006.pdf?hash=J6iqbKxdNDGHJQyeuzozHA&expires=1659324441
+
+* rabbitmq-tutorials/php at master · rabbitmq/rabbitmq-tutorials
+https://github.com/rabbitmq/rabbitmq-tutorials/tree/master/php
+
+* GitHub - pgq/pgq: Generic Queue for PostgreSQL
+https://github.com/pgq/pgq
+
+* RabbitMQ против Kafka: два разных подхода к обмену сообщениями
+https://habr.com/ru/company/itsumma/blog/416629/
+
+* [Скачать] otus_project.zip
+https://cdn.otus.ru/media/private/90/8b/otus_project-50919-908b97.zip?hash=KtlCTeN36dVHzYLtBlHlgg&expires=1659324441
+
+* [Скачать] 26_Queues_Part_2.pdf
+https://cdn.otus.ru/media/private/18/90/26_Queues_Part_2-50919-189072.pdf?hash=lbC9w4eBAGfu6zuuT1C3EA&expires=1659324441
+
+* GitHub - php-amqplib/php-amqplib: The most widely used PHP client for RabbitMQ
+https://github.com/php-amqplib/php-amqplib
+
+* GitHub - arnaud-lb/php-rdkafka: Production-ready, stable Kafka client for PHP
+https://github.com/arnaud-lb/php-rdkafka
+
+* [Скачать] 28_Replication.pdf
+https://cdn.otus.ru/media/private/db/e1/28_Replication-50919-dbe129.pdf?hash=aRY_rFfH5f1YLcUJOLDiwQ&expires=1659324441
+
+* Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems: Kleppmann, Martin: 9781449373320: Amazon.com: Books
+https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321
+
+* Turning the database inside out with Apache Samza — Martin Kleppmann’s talks
+https://martin.kleppmann.com/2015/02/11/database-inside-out-at-salesforce.html
+
+* [Скачать] meeting_saved_chat.txt
+https://cdn.otus.ru/media/private/07/97/meeting_saved_chat-39289-07975b.txt?hash=Qg5Qxd0-RMBrHpsoQ2B1rg&expires=1659324441
+
+* Стажёр Вася и его истории об идемпотентности API
+https://habr.com/ru/company/yandex/blog/442762/
+
+* Стажёр Вася и его опыт разработки нового API
+https://habr.com/ru/company/yandex/blog/583332/
+
+* REST API error return good practices
+https://stackoverflow.com/questions/942951/rest-api-error-return-good-practices
+
+* [Скачать] 29_Sharding.pdf
+https://cdn.otus.ru/media/private/2d/1b/29_Sharding-50919-2d1b4d.pdf?hash=UBx7FqC6QjnDUmTi3ShKJw&expires=1659324441
+
+* [Скачать] PHP – Кэширование v1.2.pdf
+https://cdn.otus.ru/media/private/41/9d/PHP___%D0%9A%D1%8D%D1%88%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_v1.2-39289-419d2c.pdf?hash=goRDvpWdsEWr6Zp8F48tTg&expires=1659324441
+
+* [Скачать] meeting_saved_chat.txt
+https://cdn.otus.ru/media/private/82/14/meeting_saved_chat-39289-8214f4.txt?hash=QvSYcsX0__Uf0nt47I-AtA&expires=1659324441
+
+* GitHub - DmitryKirillov/otus-php-cache
+https://github.com/DmitryKirillov/otus-php-cache
+
+* [Скачать] 31_Deploying.pdf
+https://cdn.otus.ru/media/private/b0/c8/31_Deploying-50919-b0c859.pdf?hash=lXLjDXhxwbE4AqxsQ1qkOA&expires=1659324441
+
+* Mikhail Kamorin / php-deploy-demo-06-22 · GitLab
+https://gitlab.com/raptor-mvk/php-deploy-demo-06-22
+
+* GitLab CI/CD | GitLab
+https://docs.gitlab.com/ee/ci/README.html
+
+* [Скачать] 32_Deployment_practice.pdf
+https://cdn.otus.ru/media/private/92/27/32_Deployment_practice-50919-9227fc.pdf?hash=AAYd04DwMyxDnuVRg6Lc0A&expires=1659324441
+
+* [Скачать] 33_Site_Reliability_Engineering.pdf
+https://cdn.otus.ru/media/private/21/cd/33_Site_Reliability_Engineering-50919-21cd9b.pdf?hash=-Tf7MoqSZbS_axlQfHgVrg&expires=1659324441
+
+* Google - Site Reliability Engineering
+https://sre.google/books/
+
+* Шаблон  презентации для защиты проекта
+https://docs.google.com/presentation/d/1ugjXX1yX400tUXxBIZaLgiwlJwpl3EzQ5fF2sp3wXPY/edit#slide=id.p1
+
+* Проекты PHP 2021-07
+https://docs.google.com/spreadsheets/d/1Ux3Z8H6IpDczpRA9yfvMDGTyBt_I7SjnzI5hJLOKYh0/edit#gid=0
+
+* [Скачать] chat.txt
+https://cdn.otus.ru/media/private/17/35/chat-45136-173570.txt?hash=0i9UBTpMt6tSFH52t8qQTw&expires=1659324441
+
+* [Скачать] chat.txt
+https://cdn.otus.ru/media/private/6b/1f/chat-45136-6b1f36.txt?hash=NHMu5qgC9lPlqKMsZ0Lu3Q&expires=1659324441
+
+* [Скачать] Вводная по проекту.pptx
+https://cdn.otus.ru/media/private/df/47/%D0%92%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BE_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83-45136-df4740.pptx?hash=bJyGsq3tFMVT6a-HuNO_eg&expires=1659324441
+
