@@ -1,0 +1,4 @@
+.idea
+.idea/*
+/hw5_email_validator/valid_emails.txt
+.env
