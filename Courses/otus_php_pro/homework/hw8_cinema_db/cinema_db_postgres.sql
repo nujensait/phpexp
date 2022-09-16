@@ -1,4 +1,11 @@
+-- Otus homeWork #8 (cinema DB)
+-- all files in one 
+
+-- create DB
 create database otus_hw8;
+
+-- connect to created db
+\c otus_hw8;
 
 comment on database otus_hw8 is 'Otus homeWork #8 (cinema DB)';
 
