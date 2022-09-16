@@ -58,22 +58,40 @@ Mikhail Ikonnikov <mishaikon@gmail.com>
 
 ## РЕШЕНИЕ
 Выполняем команды в консоли, смотрим результат:
+(*) аналитику вынес в отдельный файл - см. otus_hw11_analytics.pdf
 ```
 # run postgres client in console
 pgsql
 
-# load old DB dump (see 'hw8_cinema_db')
+# 1. load old DB dump (see 'hw8_cinema_db')
 \i 1_create_cinema_db.sql
 
-# load applied functions
+# 2. load applied functions
 \i 2_functions.sql
 
-# load data (small dump)
+# 3. load data (small dump)
 \i 3_fill_db_small.sql
 
-# exec analyze of simple queries 
+# 4. exec analyze of simple queries 
 \i 4_simple_queries.sql
 
-# exec analyze of hard queries 
+# 5. exec analyze of hard queries 
 \i 5_hard_queries.sql
+
+# repeat steps 3-5 for other data dumps:
+\i 3_fill_db_medium.sql
+\i 4_simple_queries.sql
+\i 5_hard_queries.sql
+
+\i 3_fill_db_large.sql
+\i 4_simple_queries.sql
+\i 5_hard_queries.sql
+
+# analyze outputs
+
+# 6. get top large objects
+\i 6_top_large_objects.sql
+
+# 7. get mosy used indexes
+\i 7_top_used_indexes.sql 
 ```

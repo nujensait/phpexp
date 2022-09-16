@@ -35,6 +35,9 @@ where duration >= 90;
 -- интересно, почему так? должно было уменьшиться ...
 -- но т.к. этот текст не прочитают, это останется тайной )
 
+-- drop index
+drop index movie_duration_index;
+
 ------------------------------------------------------------------------------------------------------------------------------------------
 -- ПРОСТОЙ ЗАПРОС №2
 -- Билеты, купленные за последние 7 дней
@@ -54,7 +57,7 @@ and (paytime::date >= (now() - interval '7 day')::date);
 
 
 -- добавляем индекс
-create index on "order" (date(paytime));
+create index i_order_paytime on "order" (date(paytime));
 
 -- выборка с индексом
 explain analyse 
@@ -69,8 +72,10 @@ and (paytime::date >= (now() - interval '7 day')::date);
 --Planning Time: 0.639 ms
 -- Execution Time: 0.068 ms
 
-
 -- с индексом сработало быстрее в 2,5 раза судя по Execution Time
+
+-- delete index
+drop index i_order_paytime;
 
 --------------------------------------------------------------------------------------------------------------------------
 -- ПРОСТОЙ ЗАПРОС №3
@@ -111,4 +116,6 @@ where length("name") = 10;
 --Execution Time: 0.199 ms
 
 -- Итого: запрос с индексом отработал быстрее в 5 раз (Execution Time: 2.873 / 0.577) 
- 
+
+-- удаляем индекс
+drop index i_user_name_length;
