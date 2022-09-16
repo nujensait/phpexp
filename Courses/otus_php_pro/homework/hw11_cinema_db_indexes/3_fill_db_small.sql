@@ -21,9 +21,10 @@ insert into movie(id, name, duration)
 select gs.id,
        random_string((5 + random() * 20)::integer),
        random_integer(60, 180) 
-from generate_series(1, 20) as gs(id);
+from generate_series(1, 1000) as gs(id);
 
 -- places in halls
+ALTER SEQUENCE place_id_seq RESTART WITH 1;
 do
 $$
     begin
@@ -55,7 +56,7 @@ INSERT INTO public.schedule
 (id, hall_id, movie_id, start_time, price)
 select gs.id,
        random_integer(1, 3),
-       random_integer(1, 20),
+       random_integer(1, 1000),
        random_timestamp(),
        random_integer(100, 500)
 from generate_series(1, 100) as gs(id);
