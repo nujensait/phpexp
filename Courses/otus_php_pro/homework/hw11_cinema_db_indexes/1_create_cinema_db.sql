@@ -2,11 +2,15 @@
 -- all files in one 
 
 -- create db
-create database otus_hw11;
-comment on database otus_hw11 is 'Otus homeWork #8 (cinema DB)';
+create database otus_hw11 WITH OWNER = postgres  ENCODING = 'UTF8'  IS_TEMPLATE = False;
+GRANT ALL PRIVILEGES ON DATABASE "otus_hw11" to postgres;
+comment on database otus_hw11 is 'Otus HomeWork #11 (cinema DB with indexes)';
 
 -- connect to created db
 \c otus_hw11;
+
+-- use shema
+SET search_path TO public;
 
 -- Halls
 create table hall
