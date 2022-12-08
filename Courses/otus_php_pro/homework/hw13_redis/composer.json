@@ -1,6 +1,6 @@
 {
-    "name": "ashvedov/otus-hw11",
-    "description": "homework 11",
+    "name": "mikonnikov/otus-hw11",
+    "description": "Otus PHP HomeWork #11 (Redis)",
     "type": "project",
     "license": "MIT",
     "autoload": {
@@ -11,7 +11,7 @@
     },
     "authors": [
         {
-            "name": "Anton Shvedov"
+            "name": "Mikhail Ikonnikov"
         }
     ],
     "require": {

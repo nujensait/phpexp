@@ -51,6 +51,12 @@ Mikhail Ikonnikov , mishaikon@gmail.com
 git clone https://github.com/otusteamedu/PHP_2022.git
 cd PHP_2022
 git checkout MIkonnikov/hw13
+
+# setup redis/memcached extesions (if required)
+apt-get install php-redis
+apt-get install php-memcached
+
+# download/update vendor libs
 composer update
 ```
 - переименовать файл ```.env.example``` в файл ```.env``` 
@@ -89,6 +95,9 @@ docker exec -it otus-hw11  bash
 - Результатом поиска и удаления всегда будет событие соответствуюшие заданным условиям поиска, но с максимальным рангом (```score```)
   (*) Пример тестирования через Postman:
 ![postman-add-event.jpg](readme_img/postman-add-event.jpg)
+
+(!) Для тестирования можно также использовать тестовую площадку онлайн:
+http://90.156.203.124:8005/
 
 ### Примеры работы через консольное приложение
 - Начало:  
