@@ -26,7 +26,15 @@ class Apptests extends TestCase
 
     private $testCases = [
         [
-            'action' => 'api/event/add/',
+            'action' => 'api/event/delete_all/',            // delete all
+            'method' => 'POST',
+            'data' => [
+                "key" => "event"
+            ],
+            'result' => ['Storage cleared'],
+        ],
+        [
+            'action' => 'api/event/add/',                   // add
             'method' => 'POST',
             'data' => [
                 "key" => "event",
@@ -34,10 +42,10 @@ class Apptests extends TestCase
                 "conditions" => "param=1",
                 "event_description" => "event1"
             ],
-            'result' => 'Event added',  // all is fine
+            'result' => 'Event added',
         ],
         [
-            'action' => 'api/event/add/',
+            'action' => 'api/event/add/',                   // add
             'method' => 'POST',
             'data' => [
                 "key" => "event",
@@ -48,7 +56,7 @@ class Apptests extends TestCase
             'result' => 'Event added',  // all is fine
         ],
         [
-            'action' => 'api/event/add/',
+            'action' => 'api/event/add/',                   // add
             'method' => 'POST',
             'data' => [
                 "key" => "event",
@@ -59,7 +67,7 @@ class Apptests extends TestCase
             'result' => 'Event added',  // all is fine
         ],
         [
-            'action' => 'api/event/get_all/',
+            'action' => 'api/event/get_all/',               // get_all
             'method' => 'POST',
             'data' => [
                 "key" => "event",
@@ -69,6 +77,44 @@ class Apptests extends TestCase
                 '{"conditions":"param=1,param2","event":"event2"}',
                 '{"conditions":"param=1,param2","event":"event3"}'
             ],
+        ],
+        [
+            'action' => 'api/event/delete/',               // delete single
+            'method' => 'POST',
+            'data' => [
+                "key" => "event",
+                "score" => 2000,
+                "conditions" => "param=1,param2",
+                "event_description" => "event2"
+            ],
+            'result' => "Event event2 deleted",
+        ],
+        [
+            'action' => 'api/event/get_all/',               // get_all
+            'method' => 'POST',
+            'data' => [
+                "key" => "event",
+            ],
+            'result' => [
+                '{"conditions":"param=1","event":"event1"}',
+                '{"conditions":"param=1,param2","event":"event3"}'
+            ],
+        ],
+        [
+            'action' => 'api/event/delete_all/',               // delete all
+            'method' => 'POST',
+            'data' => [
+                "key" => "event",
+            ],
+            'result' => ["Storage cleared"],
+        ],
+        [
+            'action' => 'api/event/get_all/',                   // get_all (empty)
+            'method' => 'POST',
+            'data' => [
+                "key" => "event",
+            ],
+            'result' => "[]",
         ],
     ];
 
