@@ -13,6 +13,11 @@ Otus PHP Pro course: https://fas.st/wRyRs
 # How to use
 See readme.txt or readme.md file inside each directory
 
+# Other's solutions
+Pull requests of other students are here:
+- remote: https://github.com/otusteamedu/PHP_2022/
+- local: E:\OpenServer\domains\codexamps\src\mishaikon\phpexp\Courses\otus_php_pro\PHP_2022
+
 # (*) Hack
 Run parsing script to download all lessons materials from course:
 php all_lesons_materials/otus_materials_parser.php
