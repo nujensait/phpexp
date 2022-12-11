@@ -53,4 +53,3 @@ class Book
         return $this->stocks;
     }
 }
-

@@ -26,4 +26,3 @@ class Stock
         return $this->stock;
     }
 }
-

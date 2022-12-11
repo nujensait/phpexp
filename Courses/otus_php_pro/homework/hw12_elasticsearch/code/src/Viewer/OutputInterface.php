@@ -8,4 +8,3 @@ interface OutputInterface
 {
     public function echo(array $books): void;
 }
-

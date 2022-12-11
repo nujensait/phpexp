@@ -13,7 +13,7 @@ class BookDTO
 
     private array $stocks;
 
-    public function __construct(string $sku='', string $title='', string $category='', int $price=0)
+    public function __construct(string $sku = '', string $title = '', string $category = '', int $price = 0)
     {
         $this->sku = $sku;
         $this->title = $title;
@@ -21,4 +21,3 @@ class BookDTO
         $this->price = $price;
     }
 }
-

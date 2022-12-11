@@ -1,7 +1,10 @@
-# PHP_2022 Домашнее задание HW10 (ElasticSearch)
+# PHP_2022 Домашнее задание №10 (Занятие №12, ElasticSearch)
 
 # Автор
 Mikhail Ikonnikov <mishaikon@gmail.com>
+
+# Курс
+Otus PHP Professional: https://fas.st/wRyRs
 
 # Задание
 - реализуем поиск по книжному интернет-магазину с помощью Elasticsearch

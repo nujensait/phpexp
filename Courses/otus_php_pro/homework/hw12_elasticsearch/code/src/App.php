@@ -28,4 +28,3 @@ class App
         $this->output->echo($result);
     }
 }
-
