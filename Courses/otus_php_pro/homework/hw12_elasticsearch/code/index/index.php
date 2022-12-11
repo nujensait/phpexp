@@ -14,4 +14,3 @@ try {
 } catch (Exception $e) {
     echo $e->getMessage() . "\n" . "Trace: " . $e->getTraceAsString() . "\n";
 }
-

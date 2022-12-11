@@ -1,12 +1,12 @@
 {
   "name": "otus/app",
-  "description": "HW10 Elasticsearch",
+  "description": "HW10 (12) Elasticsearch",
   "type": "project",
   "license": "Freeware",
   "authors": [
     {
-      "name": "I.Tsyganok",
-      "email": "ciganokigor@gmail.com"
+      "name": "MIkonnikov",
+      "email": "mishaikon@gmail.com"
     }
   ],
   "require": {
