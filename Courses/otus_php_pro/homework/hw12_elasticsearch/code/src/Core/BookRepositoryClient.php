@@ -6,28 +6,17 @@ namespace Otus\App\Core;
 
 use Otus\App\Entity\Book;
 use Otus\App\Entity\Stock;
-use Elastic\Elasticsearch\Client;
-use Elastic\Elasticsearch\ClientBuilder;
 
-class ElasticClient implements RepositoryInterface
+/**
+ * ElasticSearch client
+ */
+class BookRepositoryClient extends DataRepositoryClient
 {
-    private const LIMIT = 11;
-    private Client $client;
-
-    public function __construct()
-    {
-        $this->client = ClientBuilder::create()->setHosts(['elasticsearch:9200'])->build();
-    }
-
-    public function search(array $params): array
-    {
-        $preparedParams = $this->getPreparedParams($params);
-        $response = $this->client->search($preparedParams);
-        $responseAsArray = $response->asArray()['hits']['hits'];
-        return $this->formatResult($responseAsArray);
-    }
-
-    private function formatResult(array $result): array
+    /**
+     * @param array $result
+     * @return array
+     */
+    public function formatResult(array $result): array
     {
         $preparedResult = [];
         foreach ($result as $bookInfo) {
@@ -47,7 +36,11 @@ class ElasticClient implements RepositoryInterface
         return $preparedResult;
     }
 
-    private function getPreparedParams(array $params): array
+    /**
+     * @param array $params
+     * @return array
+     */
+    public function getPreparedParams(array $params): array
     {
         $conditions = [];
         foreach ($params as $name => $value) {
