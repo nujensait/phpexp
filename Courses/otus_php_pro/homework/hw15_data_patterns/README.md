@@ -41,7 +41,7 @@ Identity Map или Lazy Load.
 ``` 
 git clone https://github.com/otusteamedu/PHP_2022.git
 cd PHP_2022
-git checkout MIkonnikov_hw15
+git checkout MIkonnikov_hw15_db_patterns
 
 # copy sources
 cp .env.example .env
