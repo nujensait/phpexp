@@ -24,7 +24,7 @@ class App
         $this->container = $builder->build();
 
         $dotenv = new Dotenv();
-        $dotenv->load($_SERVER['DOCUMENT_ROOT'].'/.env');
+        $dotenv->load('/var/www/html/.env');
     }
 
     /**
@@ -101,5 +101,6 @@ class App
     {
         echo "\n" . $header . "\n";
         echo json_encode($content, JSON_PRETTY_PRINT);
+        echo "\n\n";
     }
 }

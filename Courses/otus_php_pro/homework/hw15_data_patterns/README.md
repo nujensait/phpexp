@@ -53,6 +53,12 @@ docker-compose build
 docker-compose up -d
 ```
 
+### Загрузка дампа БД
+```
+docker exec -it postgres bash
+psql app_db < /tmp/create.sql 
+``` 
+
 ### Файлы конфигурации
 
 #### Конфигурация инфраструктуры
@@ -69,4 +75,47 @@ docker-compose up -d
 ```
 docker exec -it app bash
 php index.php
+```
+
+### Результат запуска (пример)
+```
+DATA MAPPER
+[
+    {
+        "id": 1,
+        "name": "TestCompany",
+        "address": "Moscow",
+        "phone": "+79250028756",
+        "email": "test@mail.com"
+    },
+    {
+        "id": 2,
+        "name": "TestCompany",
+        "address": "Moscow",
+        "phone": "+79250028756",
+        "email": "test@mail.com"
+    },
+    {
+        "id": 3,
+        "name": "TestCompany",
+        "address": "Moscow",
+        "phone": "+79250028756",
+        "email": "test@mail.com"
+    }
+]
+
+
+IDENTITY MAP
+[
+    {
+        "id": 1,
+        "name": "TestName",
+        "surname": "TestSurname"
+    },
+    {
+        "id": 2,
+        "name": "TestName",
+        "surname": "TestSurname"
+    }
+]
 ```

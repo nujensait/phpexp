@@ -72,9 +72,9 @@ class User implements Entity
     public function toArray(): array
     {
         return [
-            'id' => $this->id,
-            'name' => $this->name,
-            'surname' => $this->surname,
+            'id' => isset($this->id) ? $this->id : null,
+            'name' => isset($this->name) ? $this->name : null,
+            'surname' => isset($this->surname) ? $this->surname : null,
         ];
     }
 }

@@ -2,13 +2,13 @@ version: "3.8"
 
 services:
   app:
+    image: php:8.1-fpm
     container_name: app
     build: ./fpm
     environment:
       - PHP_IDE_CONFIG=serverName=application
     volumes:
       - ./app:/var/www/html
-      - ./app/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
     networks:
       - app-net
 
@@ -28,6 +28,7 @@ services:
     container_name: postgres
     volumes:
       - ./volumes/db/postgres:/var/lib/postgresql/data
+      - ./sql:/tmp
     environment:
       - POSTGRES_DB=${DB_DATABASE}
       - POSTGRES_USER=${DB_USERNAME}
