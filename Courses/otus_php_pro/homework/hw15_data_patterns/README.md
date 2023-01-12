@@ -119,3 +119,33 @@ IDENTITY MAP
     }
 ]
 ```
+
+### TODO-LIST (Что можно улучшить)
+
+- Разбить архитектуру на слои: Инфраструктуры (Infrastructure), Приложения (Application), Сервисов (Service) и т.п.
+ 
+- Сделать примитивные типы объектными, например, см. app/src/Database/DataMapper/Entity/Company.php :
+```php
+    private ?int $id = null;
+    private string $name = '';
+    private string $address = '';
+    private string $phone = '';
+    private string $email = '';
+```
+заменить на: 
+```php
+    private ?int $id = null;
+    private TypeName $name;
+    private TypeAddress $address;
+    private TypePhone $phone;
+    private TypeEmail $email;
+```
+(типы данных завернуть в классы со своими валидаторами внутри)
+аналогично, сделать объектные типы в классе ``User``
+
+- автоматизировать сборку проекта - чтобы все поднималось запуском одного сркрипта, 
+а не последовательностью вручную выполняемых команд, описанных выше
+
+- тестовые методы ``identityMapExample()`` , ``dataMapperExample`` из app/src/Core/App.php вынести в unit-тесты с тестовыми данными (фикстурами),
+метод ``print`` также вынести отсюда в отдельый класс - ``Logger`` (отвечающий за вывод отладочной информации в консоль/лог)
+(нарушение принципа "Single reponsebility") 
