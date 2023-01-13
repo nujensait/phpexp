@@ -22,9 +22,8 @@ class App
     {
         $builder = new ContainerBuilder();
         $this->container = $builder->build();
-
         $dotenv = new Dotenv();
-        $dotenv->load('/var/www/html/.env');
+        $dotenv->load($_SERVER['PWD'] . '/.env');
     }
 
     /**
