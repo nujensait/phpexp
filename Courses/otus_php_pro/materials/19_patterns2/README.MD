@@ -1,11 +1,11 @@
-Design patterns. Часть 2
+## Design patterns. Р§Р°СЃС‚СЊ 2
 
-Конспект лекции тут: 
+### РљРѕРЅСЃРїРµРєС‚ Р»РµРєС†РёРё: 
 http://nujensait.ru/10788/
 https://mishaikon.atlassian.net/l/c/FoEY15tk
 
-Исходники тут: 
+### РСЃС…РѕРґРЅРёРєРё: 
 https://github.com/nujensait/phpexp/tree/main/Courses/otus_php_pro/19_patterns2
 
-Запись лекции тут: 
+### Р—Р°РїРёСЃСЊ Р»РµРєС†РёРё: 
 https://play.boomstream.com/1K4UXVGB
