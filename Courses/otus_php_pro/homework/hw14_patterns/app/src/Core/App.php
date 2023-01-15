@@ -2,6 +2,10 @@
 
 namespace App\Db\Core;
 
+use src\Patterns\Creational\AbstractFactory\CarAssembler;
+use src\Patterns\Creational\AbstractFactory\GasolineCarFactory;
+use src\Patterns\Creational\AbstractFactory\DieselCarFactory;
+
 class App
 {
     /**
