@@ -13,7 +13,8 @@ class CookController implements ControllerInterface
     public function __construct(
         private RequestParserService $requestParserService,
         private CookDishService $cookDishService
-    ) {}
+    ) {
+    }
 
     public function __invoke(Request $request)
     {
