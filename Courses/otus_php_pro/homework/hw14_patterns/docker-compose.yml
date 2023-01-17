@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: ./fpm
+      dockerfile: Dockerfile
+    image: myapp/php
+    container_name: app
+    volumes:
+      - ./code:/data/application.local
+    networks:
+      - app-network
+
+  postgresql:
+    image: postgres:13
+    ports:
+      - "${DB_PORT}:${DB_PORT}"
+    container_name: ${DB_HOST}
+    working_dir: /data/application.local
+    restart: always
+    environment:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - postgresql:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+volumes:
+  postgresql:
+
+networks:
+  app-network:
+    driver: bridge
