@@ -17,7 +17,7 @@ abstract class AbstractDishFactory
     {
         $classIngredient = self::NAMESPACE_INGREDIENT_CLASSES . $nameIngredient;
         if (!class_exists($classIngredient)) {
-            throw new \Exception('Не найден класс ингредиента: ' . $nameIngredient);
+            throw new \Exception('Ingredient class not found: ' . $nameIngredient);
         }
 
         return new $classIngredient($dish);

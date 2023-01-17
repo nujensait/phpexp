@@ -68,7 +68,57 @@ docker-compose up -d
 docker exec -it app bash
 
 # run App
-php App.php
+php App.php Cook dish=Sandwich
 ```
 
+### Что/как можно приготовить?
+**dish**: Доступные блюда см. в ``code/src/Application/Factory/хххFactory.php``:  
+- Burger
+- HotDog
+- Sandwich
+
+**ingredient**: Ингридиенты: ```/code/src/Domain/Decorator/xxx.php```
+- Onion
+- Pepper
+- Salad
+
+### Пример запуска
+**Пример №1**
+```
+php App.php Cook dish=Sandwich
+
+PreCookEventListener, event: PreCookEvent
+PreCookEventListener2, event: PreCookEvent
+Состояние: Новый Составной сэндвич
+Наблюдатель: SandwichObserver, Состояние: Добавляем инградиенты в Составной сэндвич
+Состояние: Добавляем инградиенты в Составной сэндвич
+Наблюдатель: SandwichObserver, Состояние: Составной сэндвич готов
+Состояние: Составной сэндвич готов
+PostCookEventListener, event: PostCookEvent
+
+Стоимость Составной сэндвич: 250
+```
+
+**Пример №2**
+```
+php App.php Cook dish=HotDog ingredient=Pepper ingredient=Onion
+
+Прокси: Начинаем готовить Составной хотдог
+PreCookEventListener, event: PreCookEvent                               
+PreCookEventListener2, event: PreCookEvent                              
+Состояние: Новый Составной хотдог                                       
+Наблюдатель: HotDogObserver, Состояние: Варим сосиску в Составной хотдог
+Состояние: Варим сосиску в Составной хотдог                             
+Наблюдатель: HotDogObserver, Состояние: Добавляем соусы в Составной хотдог
+Состояние: Добавляем соусы в Составной хотдог
+Наблюдатель: HotDogObserver, Состояние: Режим булочку в Составной хотдог
+Состояние: Режим булочку в Составной хотдог
+Наблюдатель: HotDogObserver, Состояние: Добавляем инградиенты в Составной хотдог
+Состояние: Добавляем инградиенты в Составной хотдог
+Наблюдатель: HotDogObserver, Состояние: Составной хотдог готов
+Состояние: Составной хотдог готов
+PostCookEventListener, event: PostCookEvent
+
+Стоимость Составной хотдог Перец Лук: 185
+```
 
