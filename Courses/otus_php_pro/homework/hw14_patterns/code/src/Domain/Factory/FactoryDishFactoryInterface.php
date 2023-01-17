@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Domain\Factory;
+namespace Cookapp\Php\Domain\Factory;
 
 interface FactoryDishFactoryInterface
 {

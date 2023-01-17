@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Infrastructure;
+namespace Cookapp\Php\Infrastructure;
 
-use Nikolai\Php\Application\Container\ContainerBuilder;
-use Nikolai\Php\Infrastructure\Configuration\Configuration;
-use Nikolai\Php\Infrastructure\ControllerResolver\ControllerResolver;
+use Cookapp\Php\Application\Container\ContainerBuilder;
+use Cookapp\Php\Infrastructure\Configuration\Configuration;
+use Cookapp\Php\Infrastructure\ControllerResolver\ControllerResolver;
 use Symfony\Component\HttpFoundation\Request;
 
 class Application implements ApplicationInterface

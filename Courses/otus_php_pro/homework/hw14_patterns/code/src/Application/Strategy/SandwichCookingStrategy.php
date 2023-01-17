@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Application\Strategy;
+namespace Cookapp\Php\Application\Strategy;
 
-use Nikolai\Php\Domain\Model\AbstractDish;
-use Nikolai\Php\Domain\Model\CookableInterface;
+use Cookapp\Php\Domain\Model\AbstractDish;
+use Cookapp\Php\Domain\Model\CookableInterface;
 
 class SandwichCookingStrategy implements CookableInterface
 {

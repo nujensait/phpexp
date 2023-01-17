@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Domain\Observer;
+namespace Cookapp\Php\Domain\Observer;
 
-use Nikolai\Php\Domain\Model\AbstractDish;
+use Cookapp\Php\Domain\Model\AbstractDish;
 
 interface DishStateObserver
 {

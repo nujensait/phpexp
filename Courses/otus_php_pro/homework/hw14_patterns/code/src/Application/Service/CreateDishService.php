@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Application\Service;
+namespace Cookapp\Php\Application\Service;
 
 use HaydenPierce\ClassFinder\ClassFinder;
-use Nikolai\Php\Application\Dto\DishDto;
-use Nikolai\Php\Domain\Factory\FactoryDishFactoryInterface;
-use Nikolai\Php\Domain\Factory\ObserverFactoryInterface;
-use Nikolai\Php\Domain\Model\AbstractDish;
+use Cookapp\Php\Application\Dto\DishDto;
+use Cookapp\Php\Domain\Factory\FactoryDishFactoryInterface;
+use Cookapp\Php\Domain\Factory\ObserverFactoryInterface;
+use Cookapp\Php\Domain\Model\AbstractDish;
 
 class CreateDishService
 {
-    private const OBSERVERS_NAMESPACE = 'Nikolai\Php\Application\Observer';
+    private const OBSERVERS_NAMESPACE = 'Cookapp\Php\Application\Observer';
 
     public function __construct(
         private FactoryDishFactoryInterface $factoryDishFactory,

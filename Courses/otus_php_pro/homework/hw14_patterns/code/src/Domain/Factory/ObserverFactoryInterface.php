@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Domain\Factory;
+namespace Cookapp\Php\Domain\Factory;
 
-use Nikolai\Php\Domain\Observer\DishStateObserver;
+use Cookapp\Php\Domain\Observer\DishStateObserver;
 
 interface ObserverFactoryInterface
 {

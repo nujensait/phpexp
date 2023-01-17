@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Application\Factory;
+namespace Cookapp\Php\Application\Factory;
 
-use Nikolai\Php\Domain\Factory\AbstractDishFactory;
-use Nikolai\Php\Domain\Factory\FactoryDishFactoryInterface;
+use Cookapp\Php\Domain\Factory\AbstractDishFactory;
+use Cookapp\Php\Domain\Factory\FactoryDishFactoryInterface;
 use Psr\EventDispatcher\EventDispatcherInterface;
 
 class FactoryDishFactory implements FactoryDishFactoryInterface

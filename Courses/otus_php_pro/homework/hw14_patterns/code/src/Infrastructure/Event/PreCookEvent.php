@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Infrastructure\Event;
+namespace Cookapp\Php\Infrastructure\Event;
 
-use Nikolai\Php\Domain\Model\AbstractDish;
-use Nikolai\Php\Infrastructure\Dispatcher\AbstractEvent;
+use Cookapp\Php\Domain\Model\AbstractDish;
+use Cookapp\Php\Infrastructure\Dispatcher\AbstractEvent;
 
 class PreCookEvent extends AbstractEvent
 {

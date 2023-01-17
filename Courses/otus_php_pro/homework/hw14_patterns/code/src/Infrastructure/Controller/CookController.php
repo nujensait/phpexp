@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Infrastructure\Controller;
+namespace Cookapp\Php\Infrastructure\Controller;
 
-use Nikolai\Php\Application\Service\CookDishService;
-use Nikolai\Php\Application\Service\RequestParserService;
+use Cookapp\Php\Application\Service\CookDishService;
+use Cookapp\Php\Application\Service\RequestParserService;
 use Symfony\Component\HttpFoundation\Request;
 
 class CookController implements ControllerInterface

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Infrastructure\Configuration;
+namespace Cookapp\Php\Infrastructure\Configuration;
 
 use Symfony\Component\Dotenv\Dotenv;
 use Symfony\Component\Yaml\Yaml;

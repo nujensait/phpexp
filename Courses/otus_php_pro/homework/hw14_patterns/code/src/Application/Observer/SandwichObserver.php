@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Application\Observer;
+namespace Cookapp\Php\Application\Observer;
 
-use Nikolai\Php\Domain\Observer\DishStateObserver;
-use Nikolai\Php\Domain\Model\AbstractDish;
+use Cookapp\Php\Domain\Observer\DishStateObserver;
+use Cookapp\Php\Domain\Model\AbstractDish;
 
 class SandwichObserver implements DishStateObserver
 {

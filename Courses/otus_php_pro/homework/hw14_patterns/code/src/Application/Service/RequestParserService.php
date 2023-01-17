@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Application\Service;
+namespace Cookapp\Php\Application\Service;
 
-use Nikolai\Php\Application\Dto\DishDto;
+use Cookapp\Php\Application\Dto\DishDto;
 
 class RequestParserService
 {

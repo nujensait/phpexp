@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Application\State;
+namespace Cookapp\Php\Application\State;
 
-use Nikolai\Php\Domain\Model\AbstractDish;
-use Nikolai\Php\Domain\Model\Burger;
-use Nikolai\Php\Domain\Model\HotDog;
-use Nikolai\Php\Domain\Model\Sandwich;
-use Nikolai\Php\Domain\State\StateInterface;
+use Cookapp\Php\Domain\Model\AbstractDish;
+use Cookapp\Php\Domain\Model\Burger;
+use Cookapp\Php\Domain\Model\HotDog;
+use Cookapp\Php\Domain\Model\Sandwich;
+use Cookapp\Php\Domain\State\StateInterface;
 
 class NewState implements StateInterface
 {

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Domain\Factory;
+namespace Cookapp\Php\Domain\Factory;
 
-use Nikolai\Php\Domain\Decorator\DishDecorator;
-use Nikolai\Php\Domain\Model\AbstractDish;
+use Cookapp\Php\Domain\Decorator\DishDecorator;
+use Cookapp\Php\Domain\Model\AbstractDish;
 
 abstract class AbstractDishFactory
 {
-    const NAMESPACE_INGREDIENT_CLASSES = 'Nikolai\Php\Domain\Decorator\\';
+    const NAMESPACE_INGREDIENT_CLASSES = 'Cookapp\Php\Domain\Decorator\\';
 
     abstract public function createDish(?string $description): AbstractDish;
 

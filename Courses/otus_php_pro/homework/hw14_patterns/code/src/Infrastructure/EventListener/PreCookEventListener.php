@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Infrastructure\EventListener;
+namespace Cookapp\Php\Infrastructure\EventListener;
 
-use Nikolai\Php\Infrastructure\Event\PreCookEvent;
+use Cookapp\Php\Infrastructure\Event\PreCookEvent;
 
 class PreCookEventListener
 {

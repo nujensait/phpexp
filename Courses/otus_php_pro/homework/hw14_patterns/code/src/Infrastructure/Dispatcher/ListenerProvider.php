@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Infrastructure\Dispatcher;
+namespace Cookapp\Php\Infrastructure\Dispatcher;
 
 use Psr\EventDispatcher\ListenerProviderInterface;
 

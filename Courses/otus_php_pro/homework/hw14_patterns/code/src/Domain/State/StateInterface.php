@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Domain\State;
+namespace Cookapp\Php\Domain\State;
 
 interface StateInterface
 {

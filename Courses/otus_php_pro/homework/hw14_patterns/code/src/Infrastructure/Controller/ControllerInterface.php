@@ -1,6 +1,6 @@
 <?php
 
-namespace Nikolai\Php\Infrastructure\Controller;
+namespace Cookapp\Php\Infrastructure\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 

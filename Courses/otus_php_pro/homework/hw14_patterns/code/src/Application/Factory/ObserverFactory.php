@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Application\Factory;
+namespace Cookapp\Php\Application\Factory;
 
-use Nikolai\Php\Domain\Factory\ObserverFactoryInterface;
-use Nikolai\Php\Domain\Observer\DishStateObserver;
+use Cookapp\Php\Domain\Factory\ObserverFactoryInterface;
+use Cookapp\Php\Domain\Observer\DishStateObserver;
 
 class ObserverFactory implements ObserverFactoryInterface
 {

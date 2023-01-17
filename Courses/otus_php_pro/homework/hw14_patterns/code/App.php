@@ -1,10 +1,10 @@
 <?php
 
-declare(strict_types=1);
+//declare(strict_types=1);
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Nikolai\Php\Infrastructure\Application;
+use Cookapp\Php\Infrastructure\Application;
 
 try {
     $app = new Application();

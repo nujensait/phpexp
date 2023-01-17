@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Application\Factory;
+namespace Cookapp\Php\Application\Factory;
 
-use Nikolai\Php\Domain\Factory\AbstractDishFactory;
-use Nikolai\Php\Domain\Model\AbstractDish;
-use Nikolai\Php\Domain\Model\Burger;
+use Cookapp\Php\Domain\Factory\AbstractDishFactory;
+use Cookapp\Php\Domain\Model\AbstractDish;
+use Cookapp\Php\Domain\Model\Burger;
 use Psr\EventDispatcher\EventDispatcherInterface;
 
 class BurgerFactory extends AbstractDishFactory

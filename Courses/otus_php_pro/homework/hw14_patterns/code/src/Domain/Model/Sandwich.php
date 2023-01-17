@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Domain\Model;
+namespace Cookapp\Php\Domain\Model;
 
-use Nikolai\Php\Application\Observer\Observerable;
-use Nikolai\Php\Application\Proxy\CookProxy;
-use Nikolai\Php\Application\State\NewState;
-use Nikolai\Php\Application\Strategy\SandwichCookingStrategy;
-use Nikolai\Php\Domain\Observer\DishStateObserver;
-use Nikolai\Php\Domain\Observer\DishStateSubject;
-use Nikolai\Php\Domain\State\StateInterface;
+use Cookapp\Php\Application\Observer\Observerable;
+use Cookapp\Php\Application\Proxy\CookProxy;
+use Cookapp\Php\Application\State\NewState;
+use Cookapp\Php\Application\Strategy\SandwichCookingStrategy;
+use Cookapp\Php\Domain\Observer\DishStateObserver;
+use Cookapp\Php\Domain\Observer\DishStateSubject;
+use Cookapp\Php\Domain\State\StateInterface;
 use Psr\EventDispatcher\EventDispatcherInterface;
 
 class Sandwich extends AbstractDish

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Domain\Model;
+namespace Cookapp\Php\Domain\Model;
 
 interface CookableInterface
 {

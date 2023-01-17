@@ -1,6 +1,6 @@
 <?php
 
-namespace Nikolai\Php\Infrastructure\ControllerResolver;
+namespace Cookapp\Php\Infrastructure\ControllerResolver;
 
 interface ControllerResolverInterface
 {

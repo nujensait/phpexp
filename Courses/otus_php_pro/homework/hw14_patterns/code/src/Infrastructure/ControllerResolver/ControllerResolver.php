@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Infrastructure\ControllerResolver;
+namespace Cookapp\Php\Infrastructure\ControllerResolver;
 
 class ControllerResolver implements ControllerResolverInterface
 {

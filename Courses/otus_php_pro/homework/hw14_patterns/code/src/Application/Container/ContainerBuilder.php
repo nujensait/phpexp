@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Application\Container;
+namespace Cookapp\Php\Application\Container;
 
-use Nikolai\Php\Infrastructure\Dispatcher\ListenerProvider;
+use Cookapp\Php\Infrastructure\Dispatcher\ListenerProvider;
 use Psr\EventDispatcher\ListenerProviderInterface;
 use Symfony\Component\HttpFoundation\Request;
 use DI;
@@ -23,12 +23,12 @@ class ContainerBuilder implements ContainerBuilderInterface
         $builder->addDefinitions([
             'configuration' => DI\value($this->configuration),
             'Psr\EventDispatcher\EventDispatcherInterface' =>
-                DI\autowire('Nikolai\Php\Infrastructure\Dispatcher\EventDispatcher')
+                DI\autowire('Cookapp\Php\Infrastructure\Dispatcher\EventDispatcher')
                     ->constructorParameter('listenerProvider', $listenerProvider),
-            'Nikolai\Php\Domain\Factory\FactoryDishFactoryInterface' =>
-                DI\autowire('Nikolai\Php\Application\Factory\FactoryDishFactory'),
-            'Nikolai\Php\Domain\Factory\ObserverFactoryInterface' =>
-                DI\autowire('Nikolai\Php\Application\Factory\ObserverFactory'),
+            'Cookapp\Php\Domain\Factory\FactoryDishFactoryInterface' =>
+                DI\autowire('Cookapp\Php\Application\Factory\FactoryDishFactory'),
+            'Cookapp\Php\Domain\Factory\ObserverFactoryInterface' =>
+                DI\autowire('Cookapp\Php\Application\Factory\ObserverFactory'),
         ]);
 
         $container = $builder->build();

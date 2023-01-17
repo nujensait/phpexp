@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nikolai\Php\Domain\Observer;
+namespace Cookapp\Php\Domain\Observer;
 
 interface DishStateSubject
 {

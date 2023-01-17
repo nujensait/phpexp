@@ -1,6 +1,6 @@
 <?php
 
-namespace Nikolai\Php\Infrastructure;
+namespace Cookapp\Php\Infrastructure;
 
 interface ApplicationInterface
 {
