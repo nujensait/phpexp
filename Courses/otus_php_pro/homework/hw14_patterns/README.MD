@@ -56,8 +56,6 @@ git checkout MIkonnikov_hw14
 # setup composer libs
 cd code 
 composer install && composer update
-mv .env.example .env
-cp .env ../.env
 
 # run docker
 cd ../
@@ -72,12 +70,18 @@ php App.php Cook dish=Sandwich
 ```
 
 ### Что/как можно приготовить?
-**dish**: Доступные блюда см. в ``code/src/Application/Factory/хххFactory.php``:  
+
+Пример запуска:
+```
+php App.php Cook dish=HotDog ingredient=Pepper ingredient=Onion
+```
+
+**Параметр dish**: доступные блюда см. в ``code/src/Application/Factory/хххFactory.php``:  
 - Burger
 - HotDog
 - Sandwich
 
-**ingredient**: Ингридиенты: ```/code/src/Domain/Decorator/xxx.php```
+**Параметр ingredient**: доступные ингридиенты: ```/code/src/Domain/Decorator/xxx.php```
 - Onion
 - Pepper
 - Salad
