@@ -1,13 +1,13 @@
-# Чо это?
-Домашнее задание №7 по курсу ["Otus PHP Pro"](https://fas.st/wRyRs)
+# What is this?
+Homework #7 for ["Otus PHP Pro"](https://fas.st/wRyRs)
 
-# Автор
+# Author
 Mikhail Ikonnikov <mishaikon@gmail.com>
 
-# Пример запуска
+# Launch example
 ```
-# setup project 
-docker-compose up
+# setup project
+docker-compose-up
 
 # go into client container
 docker exec -it hw7_chat_app_client_1 bash
@@ -17,54 +17,52 @@ php app.php client
 <type any message, hit enter, type :q to exit>
 ```
 
-# Задание
+# Exercise
 
-## Домашнее задание
-Чат на сокетах
+## Homework
+Socket Chat
 
-## Цель:
+## Target:
 
-- Продолжаем учиться писать приложения и работать с новыми для себя технологиями.
+- We continue to learn how to write applications and work with new technologies.
 
-## Пошаговая инструкция выполнения домашнего задания:
+## Step-by-step instructions for completing homework:
 
-Консольный чат на сокетах Создать логику, размещаемую в двух php-контейнерах (server и client), 
-объединённых общим volume. 
-Скрипты запускаются в режиме прослушивания STDIN и обмениваются друг с другом вводимыми сообщениями через unix-сокеты.
+Console chat on sockets Create logic hosted in two php containers (server and client),
+united by a common volume.
+Scripts run in STDIN listening mode and exchange input messages with each other via unix sockets.
 
-- сервер поднимается всегда первым
-- клиент ожидает ввод из STDIN и отправляет сообщения серверу
-- сервер выводит полученное сообщение в STDOUT и отправляет клиенту подтверждение (например, "Received 24 bytes")
-- клиент выводит полученное подтверждение в STDOUT и начинает новую итерацию цикла
+- the server is always up first
+- the client expects input from STDIN and sends messages to the server
+- the server prints the received message to STDOUT and sends an acknowledgment to the client (for example, "Received 24 bytes")
+- the client outputs the received confirmation to STDOUT and starts a new iteration of the loop
 
-## Критерии оценки:
+## Criteria for evaluation:
 
-- Конструкции @ и die неприемлемы. Вместо них используйте исключения
-- Принимается только Unix-сокет
-- Код мы пишем с применением ООП
-- Код должен быть конфигурируем через файлы настроек типа config.ini
-- Обратите внимание на паттерн FrontController (он же - единая точка доступа). 
-- Все приложения, которые Вы создаёте здесь и далее должны вызываться через один файл index.php, 
-  в котором есть ТОЛЬКО одна точка входа - app.php
+- The @ and die constructs are not acceptable. Use exceptions instead
+- Only Unix socket accepted
+- We write code using OOP
+- The code must be configurable via settings files like config.ini
+- Pay attention to the FrontController pattern (it is also a single access point).
+- All applications that you create here and further must be called through one index.php file,
+  which has ONLY one entry point - app.php
 
-- Сервер и клиент запускаются командами
+- Server and client are started by commands
 ```
 php app.php server
 php app.php client
 ```
 
-- В app.php только строки:
+- In app.php only lines:
 ```
 require_once('/path/to/composer/autoload.php');
 
 try {
-        $app = new App();
-        $app->run();
-    }
-    catch(Exception $e) {
-    }
-}    
+         $app = newApp();
+         $app->run();
+     }
+     catch(Exception $e) {
+     }
+}
 ```
-- Логика чтения конфигураций и работы с сокетами - только в классах.
-
-
+- The logic of reading configurations and working with sockets - only in classes.
