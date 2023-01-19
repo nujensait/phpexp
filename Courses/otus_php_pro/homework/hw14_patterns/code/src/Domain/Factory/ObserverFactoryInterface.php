@@ -16,5 +16,5 @@ interface ObserverFactoryInterface
      * @param string $nameDish
      * @return DishStateObserver
      */
-    public function createObserver($class, string $nameDish): DishStateObserver;
+    public function createObserver(string $class, string $nameDish): DishStateObserver;
 }
