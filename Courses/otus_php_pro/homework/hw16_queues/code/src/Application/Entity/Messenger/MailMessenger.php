@@ -7,11 +7,20 @@ use Otus\App\Application\Viewer\View;
 use Otus\App\Domain\Models\Interface\MessengerInterface;
 use PHPMailer\PHPMailer\PHPMailer;
 
+/**
+ * SendMail class
+ */
 class MailMessenger implements MessengerInterface
 {
+    /**
+     * Send notification email
+     * @param string $email
+     * @return void
+     */
     public function send(string $email)
     {
         $array_mailer_config = App::getMailConfig();
+
         // Настройки PHPMailer
         $mail = new PHPMailer();
         try {
@@ -36,10 +45,11 @@ class MailMessenger implements MessengerInterface
 
             $mail->msgHTML("<html><body>
                     <h1>Здравствуйте!</h1>
-                    <p>Запрос на выписку получен. Срок обработки 1 рабочий день.</p>
+                    <p>Запрос на выписку получен. Срок обработки заявки - 1 рабочий день.</p>
                     </html></body>");
 
             $mail->send();
+
         } catch (\Exception $e) {
             View::render('error', [
                 'title' => '503 - Service Unavailable',
@@ -48,7 +58,4 @@ class MailMessenger implements MessengerInterface
             ]);
         }
     }
-
-
-
 }

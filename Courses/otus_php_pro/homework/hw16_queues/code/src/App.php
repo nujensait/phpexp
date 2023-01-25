@@ -6,38 +6,41 @@ namespace Otus\App;
 
 use Otus\App\Application\Viewer\View;
 
-
+/**
+ * Main app class
+ */
 class App
 {
     protected static $routes = [];
 
+    /**
+     * Runnng app
+     * @return void
+     */
     public static function run()
     {
         $controller_name = "Otus\\App\\Application\\Controllers\\IndexController";
         $action_name = "index";
 
         $path = trim(parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH), "/");
-        if(array_key_exists($path,self::$routes))
-        {
+        if (array_key_exists($path, self::$routes)) {
             $controller = self::$routes[$path][0];
             $controller_name = "Otus\\App\\Application\\Controllers\\{$controller}Controller";
             $action_name = self::$routes[$path][1];
         } else {
-            if($path !== "")
-            {
+            if ($path !== "") {
                 @list($controller, $action) = explode("/", $path, 2);
-                if (isset($controller)){
+                if (isset($controller)) {
                     $controller_name = "Otus\\App\\Application\\Controllers\\{$controller}Controller";
                 }
-                if (isset($action)){
+                if (isset($action)) {
                     $action_name = $action;
                 }
             }
         }
 
         // Check controller exists.
-        if(!class_exists($controller_name,true)) {
-            //redirect to 404
+        if (!class_exists($controller_name, true)) {
             View::render('error', [
                 'title' => 'Ошибка 404',
                 'error_code' => '404 - Not Found',
@@ -45,8 +48,8 @@ class App
             ]);
         }
 
-        if(!method_exists($controller_name, $action_name)) {
-            //redirect to 404
+        // redirect to 404
+        if (!method_exists($controller_name, $action_name)) {
             View::render('error', [
                 'title' => 'Ошибка 404',
                 'error_code' => '404 - Not Found',
@@ -58,7 +61,11 @@ class App
         $controller->$action_name();
     }
 
-    public static function getConfig()
+    /**
+     * Read rammitmq config
+     * @return false|mixed
+     */
+    public static function getConfig(): array
     {
         if (!file_exists('/data/mysite.local/src/Config/config.php')) {
             return false;
@@ -67,7 +74,11 @@ class App
         }
     }
 
-    public static function getMailConfig()
+    /**
+     * Read mailing config
+     * @return false|mixed
+     */
+    public static function getMailConfig(): array
     {
         if (!file_exists('/data/mysite.local/src/Config/config_mail.php')) {
             return false;

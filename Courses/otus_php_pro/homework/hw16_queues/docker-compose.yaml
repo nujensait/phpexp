@@ -50,8 +50,12 @@ services:
     volumes:
       - ./volumes/rabbitmq/data/:/var/lib/rabbitmq
       - ./volumes/rabbitmq/log/:/var/log/rabbitmq
-    command: ["bash", "-c", "chmod 400 /var/lib/rabbitmq/.erlang.cookie; rabbitmq-server"]
-    command: ["bash", "-c", "chmod 0777 /var/log/rabbitmq/; rabbitmq-server"]
+    command: >
+      sh -c "chmod 400 /var/lib/rabbitmq/.erlang.cookie &&
+             chmod 0777 /var/log/rabbitmq/ &&
+             rabbitmqctl add_user user 123456 &&
+             rabbitmqctl set_user_tags user administrator &&
+             rabbitmqctl set_permissions -p / user \".*\" \".*\" \".*\" "
     environment:
       RABBITMQ_USER: ${RABBITMQ_USER}
       RABBITMQ_PASSWORD: ${RABBITMQ_PASSWORD}

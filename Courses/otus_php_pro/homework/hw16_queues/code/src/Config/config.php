@@ -1,4 +1,8 @@
 <?php
+
+/**
+ * Rabbit config
+ */
 return [
     'repository' => [
         'hostname' => $_ENV['RABBITMQ_HOSTNAME'],

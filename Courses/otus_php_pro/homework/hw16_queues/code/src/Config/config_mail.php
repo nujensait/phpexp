@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Mailing config
+ */
 return [
     'mail' => [
         'hostname' => $_ENV['MAILER_HOSTNAME'],

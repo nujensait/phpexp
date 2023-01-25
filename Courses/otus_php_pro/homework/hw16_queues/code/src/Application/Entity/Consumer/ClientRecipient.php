@@ -5,9 +5,14 @@ namespace Otus\App\Application\Entity\Consumer;
 use Otus\App\Application\Entity\Configurator;
 use Otus\App\Domain\Models\Interface\RecipientInterface;
 
+/**
+ * Queue listener
+ */
 class ClientRecipient implements RecipientInterface
 {
-
+    /**
+     * Run listener
+     */
     public function __construct()
     {
         $connection = Configurator::createdChannel();
@@ -21,5 +26,4 @@ class ClientRecipient implements RecipientInterface
             $connection->wait();
         }
     }
-
 }
