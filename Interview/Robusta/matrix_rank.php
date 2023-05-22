@@ -30,8 +30,8 @@ class MatrixRankOperation implements iScalarMatrixOperation
     public function init(array $matrix): void {
         $this->matrix = $matrix;
         // Получаем количество строк и столбцов матрицы
-        $rows = count($this->matrix);
-        $columns = count($this->matrix[0]);
+        $this->rowsCnt = count($this->matrix);
+        $this->columnsCnt = count($this->matrix[0]);
     }
 
     /**
