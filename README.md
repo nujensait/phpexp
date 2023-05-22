@@ -1,5 +1,5 @@
-# phpexp
-PHP experiments
+# What is 'phpexp' ?
+My experiments in PHP programming
 
 # Contents
 - CodeTasks - Solved tasks from various coding platforms (LeetCode, CodeBattle, etc.)
@@ -8,10 +8,10 @@ PHP experiments
 - Interview - Solved tasks on coding interviews
 - SOLID - Practice with solid principles
 - Telegram - Experiments with telegram bots
-- exp - Various small practice tasks
+- Small_exp - Various small practice tasks
 
 # How to use
-See readme.txt/readme.md files inside each directory
+See readme.txt / readme.md files inside each directory
 
 # Author
-Mikhail Ikonnikov: mishaikon@gmail.com
+Mikhail Ikonnikov, mishaikon@gmail.com, www.nujensait.ru

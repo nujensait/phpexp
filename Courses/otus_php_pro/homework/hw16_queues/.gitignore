@@ -1,5 +1,4 @@
 .idea/
 /code/vendor/
-.env
 tmp/
 volumes/
