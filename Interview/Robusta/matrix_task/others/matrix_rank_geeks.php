@@ -112,17 +112,19 @@ function display($mat, $row, $col)
 // Driver code
 // rank = 2 (OK)
 /*
-$mat = array(array(10, 20, 10),
+$mat = array(
+    array(10, 20, 10),
     array(-20, -30, 10),
-    array(30, 50, 0));
+    array(30, 50, 0)
+);
 */
 
 // rank = 2 (OK)
-$mat = array(
-    array(-1, 1, -1, -2, 0),
-    array(2, 2, 6, 0, 0, -4),
-    array(4, 3, 11, 1, -7)
-);
+$mat = [
+    [-1,   1,  -1,  -2,    0],
+    [ 2,   2,   6,   0,   -4],
+    [ 4,   3,  11,   1,   -7]
+];
 
 print("Rank of the matrix is : ".rankOfMatrix($mat));
 
