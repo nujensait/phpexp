@@ -8,19 +8,9 @@
  */
 
 /**
- * Интерфейс для скалярных операций над матрицами
- */
-interface iScalarMatrixOperation
-{
-    public function init(array $matrix): void;
-
-    public function calc(): float;
-}
-
-/**
  * Операция по вычислению ранга матрицы
  */
-class MatrixRankOperation implements iScalarMatrixOperation
+class MatrixRankOperation
 {
     private array $matrix;
     private int $rowsCnt;
@@ -57,13 +47,14 @@ class MatrixRankOperation implements iScalarMatrixOperation
 
     /**
      * Вычисляем ранг матрицы
-     * @return float
+     * @return int
      */
-    public function calc(): float
+    public function calc(): int
     {
         $rank = $this->columnsCnt;
+        $row = 0;
 
-        for ($row = 0; $row < $rank; $row++) {
+        while($row < $rank) {
             // Прежде чем мы посетим текущую строку 'row',
             // мы убеждаемся, что matrix[row][0],....matrix[row][row-1] = 0
 
@@ -118,6 +109,8 @@ class MatrixRankOperation implements iScalarMatrixOperation
                 // Заново обрабатываем текущую строку
                 $row--;
             }
+
+            $row++;
         }
 
         return $rank;
@@ -130,9 +123,9 @@ class MatrixRankOperation implements iScalarMatrixOperation
 
 // rank = 2 (верно)
 $matrix = [
-    [-1,   1,  -1,  -2,    0],
-    [ 2,   2,   6,   0,   -4],
-    [ 4,   3,  11,   1,   -7]
+    [-1, 1, -1, -2, 0],
+    [2, 2, 6, 0, -4],
+    [4, 3, 11, 1, -7]
 ];
 
 // rank = 2 (верно)
@@ -144,9 +137,9 @@ $matrix = [
 
 // rank = 2 (верно)
 $matrix = [
-    [10,   20, 10],
+    [10, 20, 10],
     [-20, -30, 10],
-    [30,   50,  0]
+    [30, 50, 0]
 ];
 
 $rankOp = new MatrixRankOperation();
