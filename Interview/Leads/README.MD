@@ -30,7 +30,7 @@ _Ниже - мои замечания по представленному код
 - поле ``id`` можно сделать целочисленным автоинкрементным (вместо вычисляемого в php)
 
 ``/src/migrations/init.sql 3``
-- поле ``sum`` лучше сделать ``float`` и ``null`` по умолчанию
+- поле ``sum`` лучше сделать ``null`` по умолчанию
 
 ``/src/migrations/init.sql 11``
 - ``order_id``: внешний ключ должен быть целочисленным, в нашем случае - INT (но лучше BIGINT), если поправим тип ``orders.id``
@@ -39,7 +39,7 @@ _Ниже - мои замечания по представленному код
 - ``product_id``: тип лучше также BIGINT, т.к. продуктов может быть много
 
 ``/src/migrations/init.sql 13``
-- ``price``: для цены лучше использовать тип - ``float``, ``default NULL`` (т.к. есть разница между не заданной и нулевой ценой)
+- ``price``: для цены лучше ``default NULL`` (т.к. есть разница между не заданной и нулевой ценой)
 
 ``/src/migrations/init.sql 14``
 - поле ``quantity`` - лучше ``default 0`` 
@@ -80,21 +80,20 @@ return $resp;
 - указаны неверные типы данных в комментариях, типы можно указать в коде явно, примерно так:
 ```php
     /** @var int */
-    protected int $id;
+    private int $id;
 
     /** @var int */
-    protected int $orderId;
+    private int $orderId;
 
     /** @var int */
-    protected int $productId;
-
-    /** @var float */
-    protected float $price;
+    private int $productId;
 
     /** @var int */
-    protected int $quantity;
+    private int $price;
+
+    /** @var int */
+    private int $quantity;
 ``` 
-(*) да, для цены лучше использовать тип float, а не int
 
 ``/src/Entity/Item.php 80``
 - возвращается self, это не нужно, т.е. строка return лишняя, достаточно так: 
@@ -122,7 +121,17 @@ return $resp;
 - для генерации ИД заказа достаточно использовать PrimaryKey , генерируемый автоинкрементно (~в MySQL) или через sequence (~в Postgres)
 
 ``/src/Factory/OrderFactory.php 24``
-- ошибка в названии таблицы: ``FROM order1s`` , д.б. ``orders`` и лучше экранировать сущности, т.е.:
+- ошибка в названии таблицы: ``FROM order1s`` (нет такой таблицы)
+- д.б. ``orders``, если мы переходим на INT ключи с автоинкрементом (и берем ИД последней записи + 1)
+- д.б. ``orders_seq``, если мы используем новую табличку для генерации ИД (вместо sequence)
+```sql
+create table order_seq(id primary key autoincrement);
+insert into order_seq(id) values (1);
+
+update order_seq set id = id + 1;
+select id  from order_seq limit 1;
+``` 
+- и лучше экранировать сущности, т.е.:
   SELECT `id` FROM `orders` ORDER BY `createdAt` DESC LIMIT 1
 - общее: вместо native sql здесь и везде лучше использовать Doctrine
 - есть риск генерации не уникального ключа (дублирующегося), при одновременном создании двух заказов
