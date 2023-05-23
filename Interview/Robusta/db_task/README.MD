@@ -10,6 +10,12 @@ id, user_id, login_time, logout_time
 Определить в какое время за отдельно взятые сутки в системе находилось одновременно
 максимальное число пользователей.
 
-#### Решение
-- others/chat_gpt_v3.sql - решение, сгенерированое ChatGpt v.3.0
-- max_sessions.sql - мое решение (после доработок запроса выше)
+#### Обсуждения задачи
+- Обсуждение задачи: https://www.programmersforum.ru/showthread.php?t=343679
+- ``others/getMaxUsersActivity.php`` - готовое решение на php и SQlite из https://github.com/NanakiRus/Adv.Cake/blob/master/test.php
+- ``others/chat_gpt_v3.sql`` - решение от chatGPT v.3 на SQL (не рабочее)
+- ``others/insert_in_loop.sql`` - решение по вставке множества случайных данных в БД на SQL
+- 
+#### Мое решение
+- ``create_table.sql`` - создание таблицы в БД
+- ``find_max_sessions.php`` - скрипт для нахождения интервала времени с максимальным кол-вом сессий
