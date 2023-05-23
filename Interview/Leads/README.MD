@@ -16,9 +16,12 @@ _Ниже - мои замечания по представленному код
 
 (*) В начале указан ``файл`` и через пробел - номер строки, где есть замечание.
 
+---
+
 **Общее**
 - не хатает указания типов аттрибутов, аргументов методов и т.п. - если код написан на версии php 7.4+
-
+- можно также использовать ``strict_types`` для надежности
+ 
 **init.sql**
 
 ``/src/migrations/init.sql 1``
@@ -26,7 +29,7 @@ _Ниже - мои замечания по представленному код
 
 **OrderConroller.php**
 
-``src/mishaikon/phpexp/Interview/Leads/src/Controller/OrderController.php 42``
+``/src/Controller/OrderController.php 42``
 - здесь можно избавиться от if, воспользовавшись принципом полиморфизма:
 ``` 
 $order->save();
@@ -37,14 +40,14 @@ return $resp;
 также не будет if, если заведем доп. класс: ``OrderLegal exatend Order``,
 где уже пропишем свой обработчик для метода save, getUrl и др.
 
-``src/mishaikon/phpexp/Interview/Leads/src/Controller/OrderController.php 63``
+``/src/Controller/OrderController.php 63``
 - см. пред пункт: здесь также можем в класс ``Order, OrderLogal``
 добавить метод ``finishActions()``, куда перенести доп. действия по работе с заказом
 (если таковые есть), избавляемся т.о. от ``if``
 
 **Item.php**
 
-``src/mishaikon/phpexp/Interview/Leads/src/Entity/Item.php 7-20``
+``/src/Entity/Item.php 7-20``
 - указаны неверные типы данных в комментариях, типы можно указать в коде явно, примерно так:
 ```
     /** @var int */
@@ -67,13 +70,13 @@ return $resp;
 **OrderFactory.php**
 
 ``/src/Factory/OrderFactory.php 24``
-- ошибка в назваии таблиы: FROM order1s , д.б. orders и лучше кранировать сущности, т.е.:
+- ошибка в назваии таблиы: ``FROM order1s`` , д.б. ``orders`` и лучше кранировать сущности, т.е.:
   SELECT `id` FROM `orders` ORDER BY `createdAt` DESC LIMIT 1
 - Общее: вместо native sql здесь и везде лучше использовать Doctrine
 - Есть риск генерации неуникального ключа (дублирующегося), при одновременном создании двух заказов
 - (можно добавить рандомную составляющую в ключ, либо метку/хеш от тек времени в ms и т.п.)
 
-``src/mishaikon/phpexp/Interview/Leads/src/Factory/OrderFactory.php 34``
+``/src/Factory/OrderFactory.php 34``
 - Лучше абстрагироваться от структуры json-reposnse , т.е. не использовать конструкция вида:
 ```
         foreach ($data as $key => $value)
@@ -104,13 +107,13 @@ $order->setItems($items);
 $order = $doctrine->getRepository(Order::class)->find($id);
 ```
 
-``src/mishaikon/phpexp/Interview/Leads/src/Repository/OrderRepository.php 52``
+``/src/Repository/OrderRepository.php 52``
 - Короче будет с Doctrine:
 ``` 
 $repo = $this->getDoctrine()->getRepository(Order::class);
 $orders = $repo->findBy(array(), array('createdAt' => 'DESC'), $limit);
 ```
 
-``src/mishaikon/phpexp/Interview/Leads/src/Repository/OrderRepository.php 70``
-- см. пункт выше - выборка через Doctrine
+``/src/Repository/OrderRepository.php 70``
+- см. пункт выше - выборка удобне через Doctrine
  
