@@ -1,0 +1,7 @@
+CREATE TABLE `Session` (
+   `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT 'PK',
+   `user_id` INT(11) NOT NULL COMMENT 'User ID',
+   `login_time` DATETIME NOT NULL COMMENT 'Login time',
+   `logout_time` DATETIME COMMENT 'Logout time',
+   PRIMARY KEY (`id`) USING BTREE
+);
