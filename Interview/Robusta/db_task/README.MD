@@ -2,7 +2,10 @@
 
 Есть таблица Session:
 ```
-id, user_id, login_time, logout_time
+id, 
+user_id, 
+login_time, 
+logout_time
 ```
 В ней хранится id пользователя, время входа и время выхода из системы
 (может быть null, если визит еще не завершен).
@@ -15,34 +18,39 @@ id, user_id, login_time, logout_time
 - ``others/getMaxUsersActivity.php`` - готовое решение на php и SQlite из https://github.com/NanakiRus/Adv.Cake/blob/master/test.php
 - ``others/chat_gpt_v3.sql`` - решение от chatGPT v.3 на SQL (не рабочее)
 - ``others/insert_in_loop.sql`` - решение по вставке множества случайных данных в БД на SQL
-- 
+ 
 #### Мое решение
 Пробовал решать на разных бД (т.к. в задаче не указано, на какой).
 
 Т.о. разбито по папкам:
-##### sqlite 
+##### sqlite (не рабочее) 
 - решение для БД SQlite (прототип, не хватает скрипта по создаию БД и наполнению ее данными)
-- find_max_sessions.php - скрипт, изузий требуемое решение 
+- ``find_max_sessions.php`` - скрипт, ищущий требуемое решение _(нужно доработать)_ 
  
-##### mysql
+##### mysql (не рабочее)
 - ``create_table.sql`` - создание таблицы в БД
-- скрипт для поиска можно взять/доработать из версии с sqlite
+- скрипт для поиска можно взять/доработать из версии с sqlite выше _и доработать_
 
 ##### postgres (рабочее решение!)
-- sessions_data.pgsql - файл с дампом БД от заказчика (нужна доработка)
-- sesions_data_new.pgsql - файл с рабоим дампом БД (грузим его)
-- database.ini - файлс настройками коннекта к БД
-- PgConnection.php - скрипт для коннекта к БД
-- SessionsDB.php - скрипт для выполнения запросов к БД
-- index.php - скрипт запуска расчетов
+- ``sessions_data.pgsql`` - файл с дампом БД от заказчика (нужна доработка)
+- ``sesions_data_new.pgsql`` - файл с рабочим дампом БД (грузим его)
+- ``database.ini`` - файл с настройками коннекта к БД
+- ``PgConnection.php`` - класс для коннекта к БД
+- ``SessionsDB.php`` - класс для выполнения запросов к БД
+- ``SessionsView.php`` - класс для отображения результатов
+- ``index.php`` - скрипт запуска (расчеты и вывод результатов)
 
 #### Запуск/проверка работы скрипта
 - Грузим дамп БД в консоли:
 ``` 
-psql -h 127.0.0.1 -U postresql -d sessions -a -f sessions_data_new.pgsql
+cd postgres
+psql -U postresql -d sessions -a -f sessions_data_new.pgsql
 ```
 
 - Запускаем скрипт:
 ```
 php index.php
+
+[ RESULT ] Maximum amount of sessions on period [2023-05-23 00:00:00 ... 2023-05-23 23:59:59] 
+is on time interval [2023-05-23 16:52:51 ... 2023-05-23 23:59:59]: 233
 ``` 

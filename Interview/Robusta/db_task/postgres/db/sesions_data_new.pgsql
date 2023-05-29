@@ -10,13 +10,11 @@ DROP TABLE IF EXISTS public.timetable;
 
 -- Create sessions table
 CREATE TABLE public.timetable (
-                                  id integer NOT NULL,
-                                  user_id integer,
-                                  login_time bigint,
-                                  logout_time bigint
+      id integer NOT NULL,
+      user_id integer,
+      login_time bigint,
+      logout_time bigint
 );
-
-ALTER TABLE public.timetable OWNER TO postgres;
 
 -- Name: timetable_id_seq; Type: SEQUENCE; Schema: public;
 CREATE SEQUENCE public.timetable_id_seq
@@ -27,12 +25,12 @@ CREATE SEQUENCE public.timetable_id_seq
     NO MAXVALUE
     CACHE 1;
 
-ALTER TABLE public.timetable_id_seq OWNER TO postgres;
-
 -- set sequence
 ALTER TABLE ONLY public.timetable ALTER COLUMN id SET DEFAULT nextval('public.timetable_id_seq'::regclass);
 
 -- fill table by data
+-- (!) if COPY cmd is failed: exec queries from file: timetable.pgsql
+
 COPY public.timetable (id, user_id, login_time, logout_time) FROM stdin;
 1000001	6798	1684851613	1684854430
 1000002	6010	1684790067	1684811738
@@ -10036,7 +10034,6 @@ COPY public.timetable (id, user_id, login_time, logout_time) FROM stdin;
 1010000	1539	1684870079	1684885498
 \.
 
-
 -- Name: timetable_id_seq; Type: SEQUENCE SET; Schema: public;
 SELECT pg_catalog.setval('public.timetable_id_seq', 1010000, true);
 
@@ -10046,6 +10043,5 @@ ALTER TABLE ONLY public.timetable
     ADD CONSTRAINT timetable_pkey PRIMARY KEY (id);
 
 --
--- PostgreSQL database dump complete
+-- Sessions DB dump complete
 --
-

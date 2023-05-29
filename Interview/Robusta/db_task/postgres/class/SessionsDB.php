@@ -3,7 +3,7 @@
 namespace Sessions;
 
 /**
- * PostgreSQL PHP Update Demo
+ * Calc sessions DB statistics
  */
 class SessionsDB
 {
@@ -38,7 +38,7 @@ class SessionsDB
 
         $stmt = $this->pdo->query(
             'SELECT id, user_id, login_time, logout_time '
-            . 'FROM timetable '
+            . 'FROM public.timetable '
             . 'ORDER BY id ASC ' .
             $limitStmt);
 
@@ -51,17 +51,24 @@ class SessionsDB
     }
 
     /**
-     * @param DateTime $date
+     * Get sessions stat
+     * @param int $dt1
+     * @param int $dt2
      * @return mixed|null
      */
-    function getMaxSessionsTimeOnDate(\DateTime $date)
+    function getMaxSessionsTime(int $dt1, int $dt2)
     {
-        $query = 'SELECT * 
+        $query = "SELECT * 
                   FROM public.timetable 
-                  WHERE DATE(`login_time`) = :date 
-                  ORDER BY login_time ASC';
+                  WHERE login_time >= :date_begin 
+                    AND login_time <= :date_end
+                  ORDER BY login_time ASC";
 
-        $stmt = $this->pdo->query($query, [':date' =>  $date->format('Y-m-d')]);
+        $stmt = $this->pdo->prepare($query, [\PDO::ATTR_CURSOR => \PDO::CURSOR_FWDONLY]);
+        $stmt->execute([
+            'date_begin' => $dt1,
+            'date_end'   => $dt2,
+        ]);
 
         $times = [];
         $result = [];
@@ -70,22 +77,19 @@ class SessionsDB
         $rows = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 
         foreach($rows as $key => $row) {
-            $login_time  = \DateTime::createFromFormat('Y-m-d H:i:s', $row['login_time']);
-            $logout_time = \DateTime::createFromFormat('Y-m-d H:i:s', $row['logout_time']);
-
             $times[$key] = [
-                'login' => $login_time->getTimestamp(),
-                'logout' => $logout_time->getTimestamp()
+                'login' => $row['login_time'],
+                'logout' => $row['logout_time']
             ];
 
             if (isset($times[$key - 1])) {
                 $prev = $times[$key - 1];
-                if ($prev['logout'] < $times[$key]['login'] && 0 < $prev['logout']) {
+                if ($prev['logout'] < $times[$key]['login'] && $prev['logout'] > 0) {
                     $i++;
                 }
                 if (($prev['login'] <= $times[$key]['logout'] && $prev['logout'] >= $times[$key]['login']) ||
-                    (0 > $prev['logout'] && $prev['login'] <= $times[$key]['login']) ||
-                    (0 > $times[$key]['logout'] && $prev['logout'] >= $times[$key]['login'])) {
+                    ($prev['logout'] < 0 && $prev['login'] <= $times[$key]['login']) ||
+                    ($times[$key]['logout'] < 0 && $prev['logout'] >= $times[$key]['login'])) {
                     // swap results
                     $result[$i][] = $rows[$key - 1];
                     $result[$i][] = $row;
@@ -105,17 +109,18 @@ class SessionsDB
             }, $items);
         }
 
-        $result = \array_map(function ($items) {
+        $result = \array_map(function ($items) use($dt2) {
             $items = \array_unique($items, \SORT_REGULAR);
             $items += [
-                'count' => \count($items),
-                'period' => \min(pluck($items, 'login_time')) . '/' . \max(pluck($items, 'logout_time'))
+                'count'         => \count($items),
+                'period_start'  => \min(pluck($items, 'login_time')),
+                'period_end'    => \min($dt2, \max(pluck($items, 'logout_time')))
             ];
             return $items;
         }, $result);
 
         \usort($result, function ($a, $b) {
-            return ($a['count'] < $b['count']);
+            return ($a['count'] == $b['count'] ? 0 : ($a['count'] < $b['count'] ? 1 : -1));
         });
 
         return \array_shift($result);

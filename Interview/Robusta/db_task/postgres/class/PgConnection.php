@@ -3,7 +3,7 @@
 namespace Sessions;
 
 /**
- * Класс для работы с БД Postgres
+ * Postges DB connection
  */
 final class PgConnection
 {
@@ -13,19 +13,19 @@ final class PgConnection
     private static ?PgConnection $conn = null;
 
     /**
-     * Подключение к базе данных и возврат экземпляра объекта \PDO
+     * Connect to DB
      * @return \PDO
      * @throws \Exception
      */
     public function connect()
     {
-        // чтение параметров в файле конфигурации ini
+        // read .ini config file
         $params = parse_ini_file('database.ini');
         if ($params === false) {
             throw new \Exception("Error reading database configuration file");
         }
 
-        // подключение к базе данных postgresql
+        // make DB connection
         $conStr = sprintf(
             "pgsql:host=%s;port=%d;dbname=%s;user=%s;password=%s",
             $params['host'],
@@ -42,7 +42,6 @@ final class PgConnection
     }
 
     /**
-     * возврат экземпляра объекта Connection
      * тип @return
      */
     public static function get()
