@@ -129,8 +129,10 @@ class DataRetriever
         }
 
         $data = $this->api->getUserData($userId);
-        $this->database->saveUserData($userId, $data);
-        $this->cache->saveUserData($userId, $data);
+        if ($data) {
+            $this->database->saveUserData($userId, $data);
+            $this->cache->saveUserData($userId, $data);
+        }
 
         return $data;
     }
