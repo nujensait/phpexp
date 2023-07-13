@@ -118,19 +118,19 @@ class DataRetriever
     public function getUserData(int $userId)
     {
         $data = $this->cache->getUserData($userId);
-
-        if (!$data) {
-            $data = $this->database->getUserData($userId);
-
-            if (!$data) {
-                $data = $this->api->getUserData($userId);
-                if($data) {
-                    $this->database->saveUserData($userId, $data);
-                }
-            }
-
-            $this->cache->saveUserData($userId, $data);
+        if ($data) {
+            return $data;
         }
+
+        $data = $this->database->getUserData($userId);
+        if ($data) {
+            $this->cache->saveUserData($userId, $data);
+            return $data;
+        }
+
+        $data = $this->api->getUserData($userId);
+        $this->database->saveUserData($userId, $data);
+        $this->cache->saveUserData($userId, $data);
 
         return $data;
     }
