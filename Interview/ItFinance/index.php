@@ -115,7 +115,7 @@ class DataRetriever
      * @param int $userId
      * @return array|null
      */
-    public function getUserData(int $userId)
+    public function getUserData(int $userId): ?array
     {
         $data = $this->cache->getUserData($userId);
         if ($data) {
