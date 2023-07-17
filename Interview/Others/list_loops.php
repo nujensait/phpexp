@@ -6,7 +6,11 @@
 // Write a php function that can detect the presence of a loop (i.e. loop)
 // in a singly linked list, or the absence of loops.
 
-function hasLoop($head)
+/**
+ * @param $head
+ * @return bool
+ */
+function hasLoop(Node $head): bool
 {
     $slow = $head;
     $fast = $head;
@@ -21,9 +25,13 @@ function hasLoop($head)
 }
 // example usage
 class Node {
-    public $data;
-    public $next;
-    public function __construct($data) {
+    public int $data;
+    public Node $next;
+
+    /**
+     * @param $data
+     */
+    public function __construct(int $data) {
         $this->data = $data;
         $this->next = null;
     }
