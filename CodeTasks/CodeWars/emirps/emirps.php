@@ -1,6 +1,17 @@
 <?php
 
 /**
+ * "Emirps" task by CodeWars
+ * @source https://www.codewars.com/kata/55de8eabd9bef5205e0000ba/train/php
+ *
+ * @todo: make find_emirp() code working for big numbers
+ * Advise: Do not use a primality test.
+ * It will make your code very slow.
+ * Create a set of primes using a prime generator or a range of primes producer.
+ * Remember that search in a set is faster that in a sorted list or array
+ */
+
+/**
  * @param $n
  * @return array
  */

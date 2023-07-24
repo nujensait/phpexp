@@ -33,3 +33,28 @@ find_emirp(50)
 find_emirp(100)
 [8, 97, 418] ''' there are 8 emirps below 100: 13, 17, 31, 37, 71, 73, 79, 97; largest = 97; sum = 418 '''
 ```
+
+## My solutions
+
+### Simplest (#1): emirps.php
+
+The algorithmic complexity of the find_emirp function depends on the complexity of the is_prime nested function, which tests a number for primeness.
+
+The is_prime function iterates over the divisors from 2 to the square root of a number. This gives O(sqrt(n)) complexity.
+
+The find_emirp function calls is_prime for every number from 2 to n. So the total difficulty will be:
+
+O(n*sqrt(n))
+
+This can also be simplified as O(n^1.5).
+
+Thus, the algorithmic complexity of find_emirp is O(n^1.5).
+
+This is pretty good, since enumeration of all numbers up to n has O(n) complexity. But using more optimal primality testing algorithms, such as the sieve of Eratosthenes, will reduce the complexity.
+
+### Perfomance (#2): emirps2.php
+
+Here we are pre-calculate prime sequence,
+to skip multiple call is_prime function.
+
+It speeds up our caluclations significantly!
