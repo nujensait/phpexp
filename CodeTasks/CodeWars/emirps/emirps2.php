@@ -8,7 +8,7 @@
 
 class Emirp
 {
-    private $primes = [];
+    private static $primes = [];
 
     private static $start = 2;
 
@@ -16,20 +16,20 @@ class Emirp
      * @param $n
      * @return array
      */
-    public function findEmirp(int $n): array
+    public static function findEmirp(int $n): array
     {
-        $this->genPrimes($n);
+        self::genPrimes($n);
 
         $emirps = [];
         $largest = 0;
         $sum = 0;
 
-        foreach($this->primes as $prime) {
+        foreach(self::$primes as $prime) {
             if($prime > $n) {
                 break;
             }
             $reverse = strrev($prime);
-            if ($reverse != $prime && isset($this->primes[$reverse])) {
+            if ($reverse != $prime && isset(self::$primes[$reverse])) {
                 $emirps[] = $prime;
                 $sum += $prime;
                 $largest = max($largest, $prime);
@@ -43,7 +43,7 @@ class Emirp
      * @param $num
      * @return bool
      */
-    private function isPrime($num)
+    private static function isPrime($num)
     {
         if ($num == 2) {
             return true;
@@ -62,18 +62,18 @@ class Emirp
      * @param int $n
      * @return void
      */
-    private function genPrimes(int $n)
+    private static function genPrimes(int $n)
     {
         for ($i = self::$start; $i < $n; $i++) {
-            if ($this->isPrime($i)) {
-                $this->primes[(int)$i] = (int)$i;
+            if (self::isPrime($i)) {
+                self::$primes[(int)$i] = (int)$i;
             }
             $rev = strrev($i);
-            if ($this->isPrime($rev)) {
-                $this->primes[(int)$rev] = (int)$rev;
+            if (self::isPrime($rev)) {
+                self::$primes[(int)$rev] = (int)$rev;
             }
         }
-        asort($this->primes);
+        asort(self::$primes);
 
         self::$start = $i;  // remember last calulated iteration
     }

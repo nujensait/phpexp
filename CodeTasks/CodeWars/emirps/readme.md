@@ -57,4 +57,19 @@ This is pretty good, since enumeration of all numbers up to n has O(n) complexit
 Here we are pre-calculate prime sequence,
 to skip multiple call is_prime function.
 
+(*) Also, here we use **static** methods to
+remember perviously calulated results 
+(no need to calulate it again for second test).
+
 It speeds up our caluclations significantly!
+
+## Check
+```
+php emirps.php
+php emirps2.php
+```
+
+## Test results
+
+*All tests are passed!*
+
