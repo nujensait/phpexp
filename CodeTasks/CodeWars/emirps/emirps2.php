@@ -45,6 +45,10 @@ class Emirp
      */
     private static function isPrime($num)
     {
+        if ($num == 1) {
+            return false;
+        }
+
         if ($num == 2) {
             return true;
         }
@@ -64,6 +68,7 @@ class Emirp
      */
     private static function genPrimes(int $n)
     {
+        echo '===>'.self::$start.'\n\n';
         for ($i = self::$start; $i < $n; $i++) {
             if (self::isPrime($i)) {
                 self::$primes[(int)$i] = (int)$i;
