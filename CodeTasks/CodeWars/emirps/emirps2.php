@@ -3,6 +3,7 @@
 /**
  * "Emirps" task by CodeWars
  * @source https://www.codewars.com/kata/55de8eabd9bef5205e0000ba/train/php
+ *
  * (*) version #2, works for long N values
  */
 
@@ -68,7 +69,6 @@ class Emirp
      */
     private static function genPrimes(int $n)
     {
-        echo '===>'.self::$start.'\n\n';
         for ($i = self::$start; $i < $n; $i++) {
             if (self::isPrime($i)) {
                 self::$primes[(int)$i] = (int)$i;
