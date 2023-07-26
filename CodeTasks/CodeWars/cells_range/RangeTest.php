@@ -6,7 +6,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-require_once("ExcelRange.php");
+require_once("others.php");
 
 class RangeTest extends TestCase
 {
@@ -52,6 +52,7 @@ class RangeTest extends TestCase
             ]],
             'Range H7:F3 (invalid)' => ['H7:F3', []],
             'Range C2:C2 (invalid)' => ['C2:C2', []],
+            'Range AA1:AB2' => ['AA1:AB2', ['AA1', 'AB1', 'AA2', 'AB2']],
         ];
     }
 
