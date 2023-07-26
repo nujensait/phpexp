@@ -16,11 +16,11 @@ class ExcelRange
     public function getCellAddresses(string $range): ?array
     {
         $matrix = $this->getCellAddressesMatrix($range);
-        if($matrix == null) {
-            return null;
+        if($matrix === []) {
+            return [];
         }
 
-        $this->printCellsMatrix($matrix);
+        //$this->printCellsMatrix($matrix);
 
         $res = [];
         foreach($matrix as $row) {
@@ -41,11 +41,10 @@ class ExcelRange
     {
         $range = $this->getRange($range);
 
-        print "Cells range: ";
-        var_dump($range);
+        //print "Cells range: "; var_dump($range);
 
-        if ($range == null) {
-            return null;
+        if ($range == []) {
+            return [];
         }
 
         list($startCol, $startRow, $endCol, $endRow) = $range;
@@ -58,9 +57,6 @@ class ExcelRange
                 $result[$row - 1][] = $letter . $row;
             }
         }
-
-        //var_dump($result); die();
-        //sort($result);
 
         return $result;
     }
@@ -81,7 +77,12 @@ class ExcelRange
         $startCol = $this->calcColNum($startCol);
         $endCol = $this->calcColNum($endCol);
 
-        if (ord($startCol) > ord($endCol) || $startRow > $endRow) {
+        // validations
+        if ($startCol > $endCol || $startRow > $endRow) {
+            return [];
+        }
+
+        if ($startCol == $endCol && $startRow == $endRow) {
             return [];
         }
 
@@ -130,9 +131,9 @@ class ExcelRange
      */
     public function printCellsMatrix(array $arr): void
     {
-        for ($i = 0; $i < count($arr); $i++) {
-            for ($j = 0; $j < count($arr[$i]); $j++) {
-                print $arr[$i][$j] . " ";
+        foreach($arr as $row) {
+            foreach($row as $cell) {
+                print $cell . " ";
             }
             echo "\n";
         }
@@ -147,6 +148,7 @@ function getCellAddresses(string $range): ?array
 {
     $sheet = new ExcelRange();
     $cells = $sheet->getCellAddresses($range);
+
     //$sheet->printCells($cells);
     return $cells;
 }
