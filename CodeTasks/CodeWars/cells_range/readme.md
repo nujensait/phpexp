@@ -133,3 +133,12 @@ php run.php
 phpunit RangeTest.php
 phpunit FuncsTest.php
 ```
+
+## Others solutions
+Solutions that I hav seen on Kata page are not working for columns with multiple letters 
+(ex: "AA1:AB2"). Mine solution works for this case )
+(*) See file: ``others.php``
+```
+# run calcs:
+php run_others.php
+```

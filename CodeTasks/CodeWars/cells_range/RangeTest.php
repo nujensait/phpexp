@@ -6,7 +6,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-require_once("others.php");
+require_once("ExcelRange.php");
 
 class RangeTest extends TestCase
 {
