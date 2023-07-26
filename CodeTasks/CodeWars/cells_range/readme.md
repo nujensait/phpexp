@@ -37,11 +37,13 @@ the function should return [].
 The ranges that are considered to be invalid:
 
 Those in which the first cell is further away than the second.
-Example: H7:F3
+Example: ``H7:F3``
 Those in which two identical cells are specified.
-Example: C2:C2
+
+Example: ``C2:C2``
 In Google Sheets you cannot find such a range, 
-because it is considered as one cell. 
+because it is considered as one cell.
+
 For this reason, such a range is invalid in this kata.
 
 ### More examples
@@ -105,6 +107,11 @@ For this reason, such a range is invalid in this kata.
 ```
 -----------------------
 
+## Important!
+
+Here is cells range as ``AB3:AY3``
+(consists of two and more letters: after Z1 is AA1, you should now it)
+
 ## My solution
 
 Here is a PHP function to get all cell addresses in a given Google Sheets range:
@@ -116,3 +123,13 @@ then generates all cell addresses row by row and column by column.
 The addresses are sorted alphabetically at the end.
 
 This allows handling all valid Google Sheets ranges correctly.
+
+## Usage / run
+```
+# run demo calcs:
+php run.php
+
+# run tests:
+phpunit RangeTest.php
+phpunit FuncsTest.php
+```

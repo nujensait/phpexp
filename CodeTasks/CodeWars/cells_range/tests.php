@@ -1,16 +1,10 @@
 <?php
 
-/**
- * Test ExcelRange.php script
- */
-
 use PHPUnit\Framework\TestCase;
-
-require_once("ExcelRange.php");
 
 class RangeTest extends TestCase
 {
-    public static function basicTestsProvider()
+    public function basicTestsProvider()
     {
         return [
             'Range A1:A10' => ['A1:A10', [
@@ -54,7 +48,6 @@ class RangeTest extends TestCase
             'Range C2:C2 (invalid)' => ['C2:C2', []],
         ];
     }
-
     /**
      * @dataProvider basicTestsProvider
      */
