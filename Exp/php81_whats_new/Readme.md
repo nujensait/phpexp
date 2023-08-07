@@ -14,5 +14,7 @@
 - ``enums.php`` : Enums (Перечисления)
 - ``readonly.php`` : Readonly-свойства
 - ``final.php`` : Окончательные константы класса
+- ``fibers.php`` : Файберы 
+- ``fibers_copyfiles.php`` : Практический пример использования файберов
 
 
