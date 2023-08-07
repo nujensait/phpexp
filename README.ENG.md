@@ -11,7 +11,7 @@ My experiments in PHP programming
 - **TestTasks** - Tasks solved at home as test task  
 - **SOLID** - Practice with solid principles
 - **Telegram** - Experiments with telegram bots
-- **Small_exp** - Various small practice tasks
+- **Exp** - Various small practice tasks
 
 ## How to use
 See readme.txt / readme.md files inside each directory
