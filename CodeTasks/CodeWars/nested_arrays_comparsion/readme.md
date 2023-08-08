@@ -11,12 +11,12 @@ same corresponding length of nested arrays as the first array.
 
 For example:
 ```
-same_structure_as([1, 1, 1], [2, 2, 2]); // => true
-same_structure_as([1, [1, 1]], [2, [2, 2]]); // => true
-same_structure_as([1, [1, 1]], [[2, 2], 2]); // => false
-same_structure_as([1, [1, 1]], [[2], 2]); // => false
-same_structure_as([[[], []]], [[[], []]]); // => true
-same_structure_as([[[], []]], [[1, 1]]); // => false
+same_structure_as([1, 1, 1], [2, 2, 2]);        // => true
+same_structure_as([1, [1, 1]], [2, [2, 2]]);    // => true
+same_structure_as([1, [1, 1]], [[2, 2], 2]);    // => false
+same_structure_as([1, [1, 1]], [[2], 2]);       // => false
+same_structure_as([[[], []]], [[[], []]]);      // => true
+same_structure_as([[[], []]], [[1, 1]]);        // => false
 ```
 
 You may assume that all arrays passed in will be non-associative.
