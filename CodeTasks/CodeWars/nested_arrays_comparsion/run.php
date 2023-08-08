@@ -17,9 +17,9 @@ function same_structure_as(array $arr1, array $arr2): bool
 
         //var_dump($val1); echo ' <==> '; var_dump($val2); echo "\n\n";
 
-        if(gettype($val1) !== gettype($val2)) {
+        if ($val1 === null || $val2 === null) {
             return false;
-        } else if ($val1 === null || $val2 === null) {
+        } else if((is_array($val1) && !is_array($val2)) || (!is_array($val1) && is_array($val2))) {
             return false;
         } else if (is_array($val1) && is_array($val2)) {
             return same_structure_as($val1, $val2);
@@ -37,9 +37,9 @@ function same_structure_as(array $arr1, array $arr2): bool
 //var_dump(same_structure_as([1, [1, 1]], [[2, 2], 2]));  // => false
 
 // THEIRS TESTS: OK
-var_dump(same_structure_as([1, 1, 1], [2, 2, 2]));        // => true
-var_dump(same_structure_as([1, [1, 1]], [2, [2, 2]]));    // => true
-var_dump(same_structure_as([1, [1, 1]], [[2, 2], 2]));    // => false
-var_dump(same_structure_as([1, [1, 1]], [[2], 2]));       // => false
-var_dump(same_structure_as([[[], []]], [[[], []]]));      // => true
-var_dump(same_structure_as([[[], []]], [[1, 1]]));        // => false
+//var_dump(same_structure_as([1, 1, 1], [2, 2, 2]));        // => true
+//var_dump(same_structure_as([1, [1, 1]], [2, [2, 2]]));    // => true
+//var_dump(same_structure_as([1, [1, 1]], [[2, 2], 2]));    // => false
+//var_dump(same_structure_as([1, [1, 1]], [[2], 2]));       // => false
+//var_dump(same_structure_as([[[], []]], [[[], []]]));      // => true
+//var_dump(same_structure_as([[[], []]], [[1, 1]]));        // => false
