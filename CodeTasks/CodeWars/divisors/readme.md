@@ -1,6 +1,9 @@
 ## Task source 
 https://www.codewars.com/kata/544aed4c4a30184e960010f4/train/php
 
+## Title
+7 kyu - Find the divisors!
+
 ## Task
 Create a function named divisors/Divisors that takes an integer n > 1 
 and returns an array with all of the integer's divisors

@@ -1,4 +1,8 @@
-## Source
+## Task title
+
+Get the addresses of all Google Sheets cells in the range (6 kyu)
+
+## Task source
 https://www.codewars.com/kata/62c376ce1019024820580309
 
 -----------------------

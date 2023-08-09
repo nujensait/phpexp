@@ -1,5 +1,5 @@
 ## Task title
-Nesting Structure Comparison
+Nesting Structure Comparison (4 kyu)
 
 ## Task source
 https://www.codewars.com/kata/520446778469526ec0000001

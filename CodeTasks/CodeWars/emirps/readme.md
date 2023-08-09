@@ -1,6 +1,9 @@
 ### Source
 https://www.codewars.com/kata/55de8eabd9bef5205e0000ba
 
+## Task title
+5 kyu Emirps
+
 ### Task
 If you reverse the word "emirp" you will have the word "prime". 
 That idea is related with the purpose of this kata: we should select 

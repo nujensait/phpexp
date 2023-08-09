@@ -2,6 +2,12 @@
 
 Deadfish task by (https://www.codewars.com/)[CodeWars]
 
+## Title
+Make the Deadfish Swim (6 kyu)
+
+## Task source
+https://www.codewars.com/kata/51e0007c1f9378fa810002a9/train/php
+
 ## Task
 
 Write a simple parser that will parse and run Deadfish.
@@ -17,9 +23,6 @@ Invalid characters should be ignored.
 ```
 parse("iiisdoso") => [ 8, 64 ]
 ```
-
-## Task source 
-https://www.codewars.com/kata/51e0007c1f9378fa810002a9/train/php
 
 ## Usage / run
 ```
