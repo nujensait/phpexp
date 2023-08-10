@@ -1,26 +1,28 @@
-# What is it
-Sources from course "OTUS PHP Professional" 
+[English version](README.ENG.md)
+<img src="../../eng.png" alt="eng" width="20" />
 
-# Source
-Otus PHP Pro course: https://fas.st/wRyRs
+# Что это такое
+Исходники из курса [Otus PHP Pro](https://fas.st/wRyRs)
 
-# Contents
-- ./all_lessons_materials : parse materials list (from otus private cabinet) - (*)
-- ./materials : Materials/sources files from webinars (made by teachers)
-- ./homework : My homeworks (made by me)
-- ./PHP_2022 : temp repository to send homeworks (no data on main here, all data in branches/pull-requests)
+# Содержание
+- [materials](materials/readme.md): Список проанализированных материалов
+- [sources](sources/readme.md): исходные файлы вебинаров (созданные учителями)
+- [домашнее задание](домашнее задание/README.MD): Мои домашние задания (сделано МНОЙ)
+- [PHP_2022](PHP_2022/README.MD): временный репозиторий для отправки домашних заданий (здесь нет полезных данных на main, все данные находятся в ветках/pull-requests)
 
-# How to use
-See readme.txt or readme.md file inside each directory
+# Как использовать
+См. файл ``readme.md`` внутри каждого каталога.
 
-# Other's solutions
-Pull requests of other students are here:
-- remote: https://github.com/otusteamedu/PHP_2022/
-- local: E:\OpenServer\domains\codexamps\src\mishaikon\phpexp\Courses\otus_php_pro\PHP_2022
+# Чужие решения
+Решения других студентов находятся здесь:
+- удаленно: https://github.com/otusteamedu/PHP_2022/
+- локально: E:\OpenServer\domains\codexamps\src\mishaikon\phpexp\Courses\otus_php_pro\PHP_2022
 
-# (*) Hack
-Run parsing script to download all lessons materials from course:
+# Материалы
+Запустите скрипт парсинга, чтобы загрузить все материалы уроков из курса:
+```
 php all_lesons_materials/otus_materials_parser.php
+```
 
-# Author
-Mikhail Ikonnikov <mishaikon@gmail.com>
+# Автор
+Михаил Иконников <mishaikon@gmail.com>

@@ -8,52 +8,8 @@
  * Usage example:
  * <paste proper start page url, with materials, below: $parser->parsePage('XXX');
  * php .\otus_materials_parser.php
- */
 
-/**
- * Html data to parse, samples:
- *
- * <a href="#" class="learning-near__header-link js-learning-open" data-id="30855">
- * <span class="learning-near__header-text">PHP WebServers</span>
- * <span class="ic ic-fire learning-near__header-fire"></span>
- * </a>
- *
- * <script type="text/html" data-id="182865" class="js-media-player-content">
- * <div class="media-file">
- * <div class="media-file__vertical">
- * <div class="media-file__vertical-box">
- * <video controls controlsList="nodownload" oncontextmenu="return false;" width="100%" height="100%" class="video-js vjs-16-9 vjs-big-play-centered" data-boomstream-src="https://play.boomstream.com/LpYDmBgv">
- * Тег video не поддерживается вашим браузером
- * </video>
- * </div>
- * </div>
- * </div>
- * </script>
- *
- * <script type="text/html" data-id="183125" class="js-media-player-content">
- * <div class="media-link">
- * <div class="media-link__box">
- * <div class="media-link__icon ic ic-media-file"
- * style="background-image: url(https://opengraph.githubassets.com/44788430e4956f3d199bc6b7e9bf219b6d831730d3cfaa3e5440f60fb148c58f/php/php-src);"></div>
- * <div class="media-link__text">
- * <div class="media-link__title">GitHub - php/php-src: The PHP Interpreter</div>
- * <a class="media-link__link" target="_blank" href="https://github.com/php/php-src" title="Перейти">Перейти</a>
- * </div>
- * </div>
- * </div>
- * </script>
- *
- * <script type="text/html" data-id="181340" class="js-media-player-content">
- * <div class="media-file">
- * <div class="media-file__box">
- * <div class="media-file__icon ic ic-media-file ic-media-"></div>
- * <div class="media-file__text">
- * <div class="media-file__title">Materials_07-02-2022.txt</div>
- * <a class="media-file__link" target="_blank" href="https://cdn.otus.ru/media/private/bb/cc/Materials_07_02_2022-214266-bbcc4f.txt?hash=3JjT_MM2R_wTvF9H2w5fpg&expires=1659038785" title="Скачать">Скачать</a>
- * </div>
- * </div>
- * </div>
- * </script>
+ * Html data to parse, samples: @see sample_page_to_parse.html
  */
 
 require 'vendor/autoload.php'; // автозагрузчик
@@ -68,7 +24,7 @@ class OtusMaterialsParser
     private $body;
 
     const LOGIN         = 'mishaikon@mail.ru';
-    const PASS          = 'rR9LjjRN';
+    const PASS          = '';
     const TYPE_LINK     = 'Перейти';
     const TYPE_FILE     = 'Скачать';
     const OUTPUT_FILE   = "otus_materials.txt";

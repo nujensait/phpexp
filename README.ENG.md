@@ -1,17 +1,17 @@
-[Russian version](README.md)
+[Russian version](README.md) 
+<img src="ru.png" alt="rus" width="20"/>
 
 ## What is 'phpexp' ?
 My experiments in PHP programming
 
 ## Contents
-- **CodeTasks** - Solved tasks from various coding platforms (LeetCode, CodeBattle, etc.)
-- **Courses** - Homeworks from passed courses
-- **Docker** - experiments with containers
-- **Interview** - Solved tasks on live-coding interviews
-- **TestTasks** - Tasks solved at home as test task  
-- **SOLID** - Practice with solid principles
-- **Telegram** - Experiments with telegram bots
-- **Exp** - Various small practice tasks
+- [CodeTasks](CodeTasks/readme.md) - Solved problems with different programming platforms (LeetCode, etc.)
+- [Coures](Coures/readme.md) - Homework from completed courses
+- [Docker](Docker/readme.md) - Experimenting with containers
+- [Exp](Exp/readme.md) - Various small practice tasks
+- [Interview](Interview/readme.md) - Problems solved on live-code interview
+- [SOLID](SOLID/readme.md) - Design examples according to OOP standards
+- [TestTasks](TestTasks/readme.md) - Tasks solved at home as a test task
 
 ## How to use
 See readme.txt / readme.md files inside each directory

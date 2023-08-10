@@ -1,3 +1,5 @@
+[English version](README.ENG.md)
+
 ### Дано:
 три хранилища:
 - база данных (mysql),
@@ -19,3 +21,6 @@
 ```
 php index.php
 ```
+
+### Примечание
+См. также [Tanuki](../Tanuki/README.MD) - здесь полностью аналогичная задача
