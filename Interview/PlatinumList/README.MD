@@ -1,5 +1,6 @@
 # Что это?
-Задачки с собеседования в компанию **PlatinumList**
+Задачки с собеседования на должность "Senior full-stack PHP developer" 
+в компанию [PlatinumList](https://dubai.platinumlist.net/careers/vacancy?id_vacancy=40)
 
 ## Задача 4: парсер ini файла
 
@@ -39,6 +40,11 @@ function parse(string $filename): array
 
 ### Решение
 см. файл ``task4.php``
+
+### Запуск
+```
+php task4.php
+```
 
 ### Примечание
 в файле ``task4_neuro.php`` - решение, сгенерированное нейронкой,
